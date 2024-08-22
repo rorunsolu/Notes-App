@@ -1,0 +1,133 @@
+/* ------------ Imports ------------ */
+@import "styles/style.scss";
+
+/* ------------ Header ------------ */
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    place-items: center;
+    column-gap: 4rem;
+
+    padding: 10rem 0;
+
+    @media (width <= 1600px) {
+        //grid-template-rows: auto;
+        column-gap: 2rem;
+    }
+
+    @media (width <= 1250px) {
+        grid-template-rows: repeat(2, 1fr);
+
+        padding: 7.5rem 0;
+    }
+
+    @media (width <= 700px) {
+        padding: 5rem 0;
+    }
+
+    @media (width <= 400px) {
+        row-gap: 1rem;
+    }
+
+    &__header {
+        grid-column-start: 1;
+        grid-column-end: 6;
+
+        color: $white;
+
+        @media (width <= 1750px) {
+            font-size: 4rem;
+        }
+
+        @media (width <= 1600px) {
+            grid-column-end: 11;
+        }
+
+        @media (width <= 1200px) {
+            font-size: 4rem;
+        }
+
+        @media (width <= 1000px) {
+            font-size: 3rem;
+        }
+
+        @media (width <= 500px) {
+            font-size: 2.5rem;
+        }
+
+        @media (width <= 400px) {
+            font-size: 2.25rem;
+        }
+
+        @media (width <= 400px) {
+            font-size: 2.25rem;
+        }
+
+        span {
+            color: $yellow-dark;
+        }
+    }
+    &__image {
+        grid-column-start: 6;
+        grid-column-end: 10;
+
+        border-radius: 1rem;
+
+        filter: grayscale(100%);
+
+        @media (width <= 1600px) {
+            grid-column-start: 1;
+            grid-column-end: 7;
+
+            aspect-ratio: 16 / 9;
+        }
+
+        @media (width <= 700px) {
+            grid-column-end: 9;
+        }
+
+        @media (width <= 500px) {
+            aspect-ratio: 1 / 1;
+        }
+    }
+
+    &__stat-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        grid-column-start: 10;
+        grid-column-end: 11;
+
+        @media (width <= 1600px) {
+            flex-direction: row;
+            justify-self: left;
+
+            grid-column-start: 1;
+            grid-column-end: 11;
+
+            grid-row-start: 2;
+
+            gap: 2rem;
+        }
+
+        @media (width <= 1600px) {
+            display: none;
+        }
+    }
+
+    &__stat-header {
+        margin-bottom: 1.25rem;
+
+        font-size: 1.25rem;
+
+        color: $yellow-dark;
+    }
+    &__stat-quantity {
+        color: $white;
+
+        @media (width < 1600px) {
+            font-size: 2rem;
+        }
+    }
+}

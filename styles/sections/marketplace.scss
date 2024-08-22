@@ -1,0 +1,57 @@
+/* ------------ Imports ------------ */
+@import "styles/style.scss";
+
+/* ------------ Marketplace ------------ */
+
+.marketplace {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    place-items: center;
+    gap: 5rem;
+
+    padding: 10rem 0;
+
+    @media (width <= 1000px) {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    @media (width <= 700px) {
+        padding: 5rem 0;
+    }
+
+    &__header-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__header {
+        font-size: 3.5rem;
+
+        color: $white;
+
+        @media (width <= 1000px) {
+            font-size: 3rem;
+        }
+
+            @media (width <= 300px) {
+        font-size: 2.25rem;
+    }
+
+        span {
+            color: $yellow-dark;
+        }
+    }
+
+    &__description {
+        color: hsl(0, 0%, 75%);
+    }
+
+    &__image-wrapper {
+        img {
+            border-radius: 1rem;
+            height: 40rem;
+        }
+    }
+}

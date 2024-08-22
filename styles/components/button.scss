@@ -1,0 +1,64 @@
+/* ------------ Imports ------------ */
+
+@import "styles/style.scss";
+
+/* ------------ Buttons ------------ */
+
+.buttons-wrapper {
+    display: flex;
+    gap: 1rem;
+
+    @media (width <= 275px) {
+        flex-direction: column;
+    }
+}
+
+.button {
+    display: inline-block;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.25rem;
+
+    width: fit-content;
+
+    color: $black;
+    background-color: $yellow-dark;
+
+    font-weight: 500;
+
+    &:hover {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+
+        background-color: $white;
+        color: hsl(0, 0%, 0%);
+
+        transition: 300ms all ease;
+    }
+}
+
+.button--secondary {
+    border: 0.1rem solid $black;
+
+    border-radius: 2.5rem;
+    padding: 0.75rem 1.25rem;
+
+    width: fit-content;
+
+    color: $black;
+    background-color: $white;
+
+    box-shadow:
+        19px 19px 38px #bebebe,
+        -19px -19px 38px #ffffff;
+
+    font-weight: 500;
+
+    &:hover {
+        border: 0.1rem solid $black;
+
+        border-color: $black;
+
+        background-color: $black;
+        color: $white;
+    }
+}

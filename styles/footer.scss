@@ -1,0 +1,87 @@
+/* ------------ Imports ------------ */
+@import "styles/style.scss";
+
+/* ------------ Footer ------------ */
+
+.footer {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+        place-items: center;
+        gap: 3rem;
+
+        padding: 3rem 0;
+
+        @media (width <= 1350px) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__wrapper-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 1rem 0;
+
+        background-color: $white;
+
+        @media (width <= 350px) {
+            display: none;
+        }
+
+        p {
+            color: $black;
+        }
+    }
+
+    &__company {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        p {
+            color: hsl(0, 0%, 75%);
+        }
+    }
+
+    &__suheader {
+        color: $white;
+
+        font-weight: 500;
+    }
+
+    img {
+        width: 17.5rem;
+
+        @media (width <= 600px) {
+            width: 12.5rem;
+        }
+    }
+
+    a {
+        color: hsl(0, 0%, 75%);
+
+        &:hover {
+            color: $yellow-dark;
+
+            cursor: pointer;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    span {
+        &:hover {
+            color: $yellow-dark;
+
+            cursor: pointer;
+        }
+    }
+}

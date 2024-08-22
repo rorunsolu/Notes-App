@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+
+    <!-- Modern Normalize -->
+    <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v2.0.0
+        /modern-normalize.min.css" rel="stylesheet">
+
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+
+
+    <title>Vite App</title>
+  </head>
+
+  <body>
+
+    <nav>
+      <div class="container nav">
+
+        <a class="nav__logo" href="#">Logo
+          <!-- <img class="nav__logo-img" src="/images/logo.jpg" alt="logo"> -->
+        </a>
+
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+          <li class="nav__item"><a class="nav__link" href="#help">Services</a></li>
+          <li class="nav__item"><a class="nav__link" href="#agents">Contact</a></li>
+          <li class="nav__item"><a class="nav__link" href="#marketplace">About Us</a></li>
+        </ul>
+
+        <div class="nav__buttons-wrapper">
+          <a class="button" href="#" onclick="event.preventDefault();">Add Listing</a>
+        </div>
+
+
+        <button class="nav__toggle-button" id="nav__toggle-open" type="button"><i class="ri-menu-line"></i>
+        </button>
+        <button class="nav__toggle-button" id="nav__toggle-close" type="button"><i class="ri-close-line"></i>
+        </button>
+
+      </div>
+    </nav>
+
+
+    <header>
+      <div class="container header">
+
+        <h1 class="header__header">Find The <span>Property</span> That You’re Looking For</h1>
+        <img class="header__image" src="/images/skyscraper.jpg" alt="header">
+
+        <div class="header__stat-wrapper">
+          <div class="header__stat">
+            <h2 class="header__stat-quantity">100+</h2>
+            <h3 class="header__stat-header">Properties</h3>
+          </div>
+
+          <div class="header__stat">
+            <h2 class="header__stat-quantity">12+</h2>
+            <h3 class="header__stat-header">Years of Experience</h3>
+          </div>
+
+          <div class="header__stat">
+            <h2 class="header__stat-quantity">220+</h2>
+            <h3 class="header__stat-header">Customers</h3>
+          </div>
+
+
+        </div>
+
+      </div>
+    </header>
+
+    <main>
+
+      <section id="properties">
+        <div class="container properties">
+
+          <h2 class="properties__header">Take a Look at Our Properties</h2>
+          <h3 class="properties__subheader">Lorem ipsum dolor sit amet</h3>
+
+          <div class="properties__cards">
+
+            <article class="properties__card">
+              <img class="properties__card-image" src="/images/house.png" alt="house">
+              <h4 class="properties__card-header">House</h4>
+              <p class="properties__card-quantity">12 Properties</p>
+            </article>
+
+            <article class="properties__card">
+              <img class="properties__card-image" src="/images/villa.png" alt="house">
+              <h4 class="properties__card-header">Villa</h4>
+              <p class="properties__card-quantity">23 Properties</p>
+            </article>
+
+            <article class="properties__card">
+              <img class="properties__card-image" src="/images/town-house.png" alt="house">
+              <h4 class="properties__card-header">Town House</h4>
+              <p class="properties__card-quantity">10 Properties</p>
+            </article>
+
+            <article class="properties__card">
+              <img class="properties__card-image" src="/images/office.png" alt="house">
+              <h4 class="properties__card-header">Office</h4>
+              <p class="properties__card-quantity">60 Properties</p>
+            </article>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section id="listings">
+        <div class="container listings">
+
+          <div class="listings__header-wrapper">
+            <h2 class="listings__header">Take a Look at Our Listings</h2>
+            <a class="button" href="#">View All</a>
+          </div>
+
+          <div class="listings__content">
+
+            <div class="listings__card-wrapper">
+
+              <article class="listings__card">
+
+                <img class="listings__card-image" src="/images/luxury-house-1.jpg" alt="">
+
+                <div class="listings__card-info">
+                  <h4 class="listings__card-header">Luxury House</h4>
+                  <h5 class="listings__card-address">123 Main St, Anytown, USA</h5>
+                  <p class="listings__card-price">$1,500,000</p>
+                  <a class="button" href="#">Book a Viewing</a>
+
+                </div>
+
+              </article>
+
+              <article class="listings__card">
+
+                <img class="listings__card-image" src="/images/luxury-house-2.jpg" alt="house">
+
+                <div class="listings__card-info">
+                  <h4 class="listings__card-header">Luxury House</h4>
+                  <h5 class="listings__card-address">456 Elm Street, Chiraq, USA</h5>
+                  <p class="listings__card-price">$2,000,000</p>
+                  <a class="button" href="#">Book a Viewing</a>
+
+                </div>
+
+              </article>
+
+              <article class="listings__card">
+
+                <img class="listings__card-image" src="/images/luxury-house-3.jpg" alt="house">
+
+                <div class="listings__card-info">
+                  <h4 class="listings__card-header">Luxury House</h4>
+                  <h5 class="listings__card-address">789 Oak Street, Bonzakia, China</h5>
+                  <p class="listings__card-price">$3,000,000</p>
+                  <a class="button" href="#">Book a Viewing</a>
+
+                </div>
+
+              </article>
+
+            </div>
+
+            <div class="listings__callout">
+              <img class="listings__callout-image" src="/images/tall-building.jpg" alt="house">
+              <h4 class="listings__callout-header">We've helped our clients purchase over <span>$340 million</span> of
+                real estate</h4>
+              <p class="listings__callout-description">Our team of experienced real estate agents will help you navigate
+                the process of buying or selling a home. We understand the importance of finding the right property for
+                you and your family, and we're committed to making the process as smooth and stress-free as possible.<a
+                  href="#">
+                  Read More</a></p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section id="agency">
+        <div class="container agency">
+
+          <div class="agency__1st-wrapper">
+            <h2 class="agency__header">Why Choose Our Agency</h2>
+            <p class="agency__description">We are a team of experienced real estate agents who are passionate about
+              helping
+              our clients purchase, sell, and manage their real estate properties.</p>
+            <img class="agency__image" src="/images/building-2.jpg" alt="agency">
+          </div>
+
+          <div class="agency__2nd-wrapper">
+
+            <div class="agency__header-wrapper">
+              <div class="agency__header-icons">
+                <img class="agency__header-icon" src="/images/person.png" alt="agents">
+                <img class="agency__header-icon" src="/images/person.png" alt="agents">
+                <img class="agency__header-icon" src="/images/person.png" alt="agents">
+                <img class="agency__header-icon" src="/images/person.png" alt="agents">
+                <img class="agency__header-icon" src="/images/person.png" alt="agents">
+              </div>
+              <h2 class="agency__header">45 Exclusive Real Estate <span>Agents</span></h2>
+            </div>
+
+
+
+            <div class="agency__card-wrapper">
+
+              <article class="agency__card">
+                <div class="agency__card-icon"></div>
+                <div class="agency__card-content">
+                  <h3 class="agency__card-header">Mortgage Services</h3>
+                  <p class="agency__card-description">We offer a range of mortgage services to help our clients find the
+                    right loan for their needs.</p>
+                </div>
+              </article>
+
+              <article class="agency__card">
+                <div class="agency__card-icon"></div>
+                <div class="agency__card-content">
+                  <h3 class="agency__card-header">Property Management</h3>
+                  <p class="agency__card-description">We take care of all your property management needs, from finding
+                    tenants to managing daily operations. Our goal is to maximize your returns while minimizing your
+                    stress.</p>
+                </div>
+              </article>
+
+              <article class="agency__card">
+                <div class="agency__card-icon"></div>
+                <div class="agency__card-content">
+                  <h3 class="agency__card-header">Real Estate Consulting</h3>
+                  <p class="agency__card-description">Our team of real estate consultants specialize in helping clients
+                    achieve their real estate goals. We offer expert guidance and personalized solutions to help you
+                    find the perfect property or navigate the complex process of buying, selling, or managing a
+                    property.</p>
+                </div>
+              </article>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section id="help">
+        <div class="container help">
+
+          <div class="help__header-wrapper">
+            <h2 class="help__header"><span>See How</span> Our Realtors Can Help</h2>
+            <p class="help__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, placeat
+              temporibus. Cumque totam a adipisci ea reprehenderit fuga dolore molestias! </p>
+          </div>
+
+          <div class="help__card-wrapper">
+
+            <article class="help__card">
+              <i class="ri-currency-line"></i>
+              <div class="help__card-content">
+                <h3 class="help__card-header">Rent Property</h3>
+                <p class="help__card-description">Discover the perfect place to call home with our comprehensive
+                  property rental services.</p>
+              </div>
+              <a class="button" href="#">Learn More</a>
+            </article>
+
+            <article class="help__card">
+              <i class="ri-currency-line"></i>
+              <div class="help__card-content">
+                <h3 class="help__card-header">Buy Property</h3>
+                <p class="help__card-description">We guide you through the home buying process, from finding the right
+                  property to closing the deal.</p>
+              </div>
+              <a class="button" href="#">Learn More</a>
+            </article>
+
+            <article class="help__card">
+              <i class="ri-currency-line"></i>
+              <div class="help__card-content">
+                <h3 class="help__card-header">Sell Property</h3>
+                <p class="help__card-description">Maximize your returns with our expert property selling services,
+                  tailored to your needs.</p>
+              </div>
+              <a class="button" href="#">Learn More</a>
+            </article>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section id="city">
+        <div class="container city">
+
+          <h2 class="city__header">Most Popular<br> <span>Properties By City</span></h2>
+
+          <div class="city__grid">
+            <img class="city__grid-img" src="/images/tall-building.jpg" alt="city">
+            <img class="city__grid-img" src="/images/tall-building.jpg" alt="city">
+            <img class="city__grid-img" src="/images/tall-building.jpg" alt="city">
+            <img class="city__grid-img" src="/images/tall-building.jpg" alt="city">
+            <img class="city__grid-img" src="/images/tall-building.jpg" alt="city">
+            <img class="city__grid-img" src="/images/tall-building.jpg" alt="city">
+            <img class="city__grid-img" src="/images/tall-building.jpg" alt="city">
+            <img class="city__grid-img" src="/images/tall-building.jpg" alt="city">
+          </div>
+
+        </div>
+      </section>
+
+      <section id="agents">
+        <div class="container agents">
+
+          <div class="agents__header-wrapper">
+            <h2 class="agents__header">Meet Our <span>Agents</span></h2>
+            <p class="agents__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+
+          <div class="agents__card-wrapper">
+
+            <article class="agents__card">
+              <img class="agents__card-image" src="/images/person.png" alt="agent">
+              <h3 class="agents__card-header">John Doe</h3>
+              <p class="agents__card-address">123 Main St, City</p>
+
+              <div class="agents__card-icon-wrapper">
+                <i class="ri-phone-fill"></i>
+                <i class="ri-phone-fill"></i>
+                <i class="ri-phone-fill"></i>
+              </div>
+            </article>
+
+            <article class="agents__card">
+              <img class="agents__card-image" src="/images/person.png" alt="agent">
+              <h3 class="agents__card-header">Jane Smith</h3>
+              <p class="agents__card-address">456 Elm St, City</p>
+
+              <div class="agents__card-icon-wrapper">
+                <i class="ri-phone-fill"></i>
+                <i class="ri-phone-fill"></i>
+                <i class="ri-phone-fill"></i>
+              </div>
+            </article>
+
+            <article class="agents__card">
+              <img class="agents__card-image" src="/images/person.png" alt="agent">
+              <h3 class="agents__card-header">Bob Johnson</h3>
+              <p class="agents__card-address">789 Oak St, City</p>
+
+              <div class="agents__card-icon-wrapper">
+                <i class="ri-phone-fill"></i>
+                <i class="ri-phone-fill"></i>
+                <i class="ri-phone-fill"></i>
+              </div>
+            </article>
+
+          </div>
+
+          <a class="button">View All</a>
+
+        </div>
+      </section>
+
+      <section id="marketplace">
+        <div class="container marketplace">
+
+          <div class="marketplace__header-wrapper">
+            <h2 class="marketplace__header">The Leading <span>Real Estate</span> Rental Marketplace</h2>
+            <p class="marketplace__description">Our real estate rental marketplace provides a wide range of options for
+              renters in the city. Whether you're looking for a studio apartment, a one-bedroom
+              flat, or a spacious house, we have a variety of properties available for rent.
+              With our user-friendly website and reliable rental services, finding the perfect place
+              to live in the city has never been easier.</p>
+            <a class="button">Read More</a>
+          </div>
+
+          <div class="marketplace__image-wrapper">
+            <img src="/images/building-2.jpg" alt="marketplace">
+          </div>
+
+        </div>
+      </section>
+
+      <section id="newsletter">
+        <div class="container newsletter">
+
+          <h2 class="newsletter__header">Subscribe To Our <span>Newsletter</span></h2>
+          <p class="newsletter__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <input class="newsletter__input" type="text" placeholder="Write your email here">
+          <a class="button">Subscribe</a>
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer id="footer">
+      <div class="container footer">
+
+        <div class="footer__wrapper">
+
+          <div class="footer__company">
+            <img src="/images/logo.jpg" alt="logo">
+            <p>We are a real estate company that offers a wide range of services to help you achieve your real estate
+              goals.</p>
+            <p>Call us at <span>123-456-7890</span></p>
+          </div>
+
+          <div class="footer__contact">
+            <h3 class="footer__suheader">Contact Us</h3>
+            <ul>
+              <li><a href="mailto:info@realestate.com">info@realestate.com</a></li>
+              <li><a href="tel:1234567890">123-456-7890</a></li>
+              <li><a href="https://www.google.com/maps/search/123+Main+St,+City,+State+12345">123 Main St, City, State
+                  12345</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__about">
+            <h3 class="footer__suheader">About Us</h3>
+            <ul>
+              <li><a href="#">Learn More</a></li>
+              <li><a href="#">Read Our Blog</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__resources">
+            <h3 class="footer__suheader">Resources</h3>
+            <ul>
+              <li><a href="#">Buyer's Guide</a></li>
+              <li><a href="#">Seller's Guide</a></li>
+              <li><a href="#">Real Estate Glossary</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="footer__wrapper-2">
+        <p>© 2024 Real Estate Company. All rights reserved. </p>
+      </div>
+
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+
+  </body>
+
+</html>

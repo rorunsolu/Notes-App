@@ -1,0 +1,221 @@
+/* ------------ Imports ------------ */
+
+/* ------------ Variables ------------ */
+
+$grey: hsl(0, 0%, 55%);
+$grey-semi-dark: hsl(0, 0%, 19%);
+$dark-grey: hsl(0, 0%, 11%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$yellow-dark: hsl(39, 100%, 50%);
+
+/* ------------ Utilities ------------ */
+
+.container--nav {
+    width: 95%;
+}
+
+.container {
+    width: 80%;
+
+    margin: 0 auto;
+    max-width: 2000px;
+
+    position: relative;
+
+    @media (width <= 600px) {
+        width: 90%;
+    }
+}
+
+/* ------------ Reset ------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* ------------ Layout ------------ */
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+
+    color: hsl(0, 0%, 0%);
+    background-color: hsl(0, 0%, 100%);
+
+    display: grid;
+    grid-template-areas:
+        "nav nav nav"
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    grid-template-rows: 5rem auto auto auto;
+
+    min-height: 100vh;
+
+    @media (width <= 600px) {
+        grid-template-rows: 3.5rem auto auto auto;
+    }
+}
+
+nav {
+    grid-area: nav;
+}
+
+header {
+    grid-area: header;
+
+    background-color: $black;
+}
+
+footer {
+    grid-area: footer;
+
+    background-color: $dark-grey;
+}
+
+main {
+    display: grid;
+    grid-area: main;
+
+    grid-template-areas:
+        "properties"
+        "listings"
+        "agency"
+        "help"
+        "city"
+        "agents"
+        "marketplace"
+        "newsletter";
+
+    grid-template-rows: auto;
+}
+
+#properties {
+    grid-area: properties;
+
+    background-color: $dark-grey;
+}
+
+#listings {
+    grid-area: listings;
+
+    background-color: $black;
+}
+
+#agency {
+    grid-area: agency;
+
+    background-color: $dark-grey;
+}
+
+#help {
+    grid-area: help;
+
+    background-color: $black;
+}
+
+#city {
+    grid-area: city;
+
+    background-color: $black;
+}
+
+#agents {
+    grid-area: agents;
+
+    background-color: $dark-grey;
+}
+
+#marketplace {
+    grid-area: marketplace;
+
+    background-color: $black;
+}
+
+#newsletter {
+    grid-area: newsletter;
+
+    background-color: $black;
+}
+
+/* ------------ Typography ------------ */
+
+h1 {
+    font-weight: 900;
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.75rem;
+
+    @media (width <= 300px) {
+        font-size: 2.25rem;
+    }
+}
+
+h3 {
+    font-weight: 800;
+    font-size: 1.75rem;
+
+    @media (width <= 500px) {
+        font-size: 1.25rem;
+    }
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1.125rem;
+
+    color: hsl(0, 0%, 100%);
+
+    transition: all 300ms ease;
+
+    @media (width <= 400px) {
+        font-size: 0.9rem;
+    }
+}
+
+/* ------------ General ------------ */
+
+a {
+    cursor: pointer;
+}
+
+img {
+    display: inline;
+    object-fit: cover;
+    object-position: center;
+
+    width: 100%;
+}
+
+/* ------------ Mobile Navbar ------------ */
+
+.window-scrolled {
+    //border-bottom: 0.1rem solid hsl(0, 0%, 100%);
+
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+    box-sizing: content-box;
+
+    //background-color: $white;
+}
