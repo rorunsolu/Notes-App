@@ -29,10 +29,6 @@ nav {
 
     height: 100%;
 
-    @media (width < 1000px) {
-        //justify-content: flex-end;
-    }
-
     &__logo {
         font-size: 2.5rem;
         font-weight: 600;
