@@ -4,12 +4,13 @@
 /* ------------ Header ------------ */
 
 .header {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    place-items: center;
-    column-gap: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
 
     padding: 10rem 0;
+    height: 100vh;
 
     @media (width <= 1600px) {
         column-gap: 2rem;
@@ -68,10 +69,9 @@
         }
     }
     &__image {
-        grid-column-start: 6;
-        grid-column-end: 10;
+        aspect-ratio: 16 / 9;
 
-        border-radius: 1rem;
+        border-radius: 0.5rem;
 
         filter: grayscale(100%);
 
@@ -92,27 +92,7 @@
     }
 
     &__stat-wrapper {
-        display: flex;
-        flex-direction: column;
-
-        grid-column-start: 10;
-        grid-column-end: 11;
-
-        @media (width <= 1600px) {
-            flex-direction: row;
-            justify-self: left;
-
-            grid-column-start: 1;
-            grid-column-end: 11;
-
-            grid-row-start: 2;
-
-            gap: 2rem;
-        }
-
-        @media (width <= 1600px) {
-            display: none;
-        }
+        display: none;
     }
 
     &__stat-header {
