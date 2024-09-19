@@ -3,110 +3,72 @@
 
 /* ------------ Header ------------ */
 
+header {
+    position: relative;
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        width: 100%;
+        height: 100%;
+
+        background-image: url("/images/header-bg.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        filter: brightness(0.3);
+    }
+}
+
 .header {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 3rem;
 
     padding: 10rem 0;
-    height: 100vh;
-
-    @media (width <= 1600px) {
-        column-gap: 2rem;
-    }
-
-    @media (width <= 1250px) {
-        grid-template-rows: repeat(2, 1fr);
-
-        padding: 7.5rem 0;
-    }
-
-    @media (width <= 700px) {
-        padding: 5rem 0;
-    }
-
-    @media (width <= 400px) {
-        row-gap: 1rem;
-    }
 
     &__header {
         grid-column-start: 1;
         grid-column-end: 6;
 
+        text-align: center;
+
         color: $white;
 
-        @media (width <= 1750px) {
-            font-size: 4rem;
-        }
-
-        @media (width <= 1600px) {
-            grid-column-end: 11;
-        }
-
-        @media (width <= 1200px) {
-            font-size: 4rem;
-        }
-
-        @media (width <= 1000px) {
-            font-size: 3rem;
-        }
-
-        @media (width <= 500px) {
-            font-size: 2.5rem;
-        }
-
-        @media (width <= 400px) {
-            font-size: 2.25rem;
-        }
-
-        @media (width <= 400px) {
-            font-size: 2.25rem;
-        }
-
         span {
-            color: $yellow-dark;
+            color: $yellow;
         }
     }
-    &__image {
-        aspect-ratio: 16 / 9;
 
-        border-radius: 0.5rem;
+    &__subheader {
+        color: $white;
 
-        filter: grayscale(100%);
-
-        @media (width <= 1600px) {
-            grid-column-start: 1;
-            grid-column-end: 7;
-
-            aspect-ratio: 16 / 9;
-        }
-
-        @media (width <= 700px) {
-            grid-column-end: 9;
-        }
-
-        @media (width <= 500px) {
-            aspect-ratio: 1 / 1;
-        }
+        font-weight: 500;
     }
 
     &__stat-wrapper {
-        display: none;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
     }
 
-    &__stat-header {
-        margin-bottom: 1.25rem;
+    &__stat-number {
+        font-size: 2.25rem;
 
+        color: $yellow;
+    }
+
+    &__stat-description {
         font-size: 1.25rem;
 
-        color: $yellow-dark;
-    }
-    &__stat-quantity {
         color: $white;
-
-        @media (width < 1600px) {
-            font-size: 2rem;
-        }
     }
 }

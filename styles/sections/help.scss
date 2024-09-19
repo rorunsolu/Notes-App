@@ -15,35 +15,23 @@
         padding: 5rem 0;
     }
 
-    &__header-wrapper {
-        display: flex;
-        flex-direction: column;
-
-        margin-bottom: 5rem;
-    }
     &__header {
         color: $white;
 
         span {
-            color: $yellow-dark;
+            color: $yellow;
         }
     }
     &__description {
-        color: hsl(0, 0%, 75%);
+        margin-bottom: 5rem;
+
+        color: $grey;
     }
 
     &__card-wrapper {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 9rem;
-
-        @media (width <= 1600px) {
-            gap: 5rem;
-        }
-
-        @media (width <= 1500px) {
-            gap: 2rem;
-        }
+        gap: 2rem;
 
         @media (width <= 1300px) {
             grid-template-columns: repeat(2, 1fr);
@@ -58,29 +46,34 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
 
-        border: 0.1rem solid $yellow-dark;
+        border: 1px solid $yellow;
         border-radius: 1rem;
-        padding: 2rem;
+        padding: 1rem;
+
+        background: $bg-gradient;
     }
 
     i {
-        border-radius: 1rem;
+        border-radius: 0.5rem;
+        padding: 1rem 0;
 
-        aspect-ratio: 1 / 1;
+        //aspect-ratio: 1 / 1;
 
         font-size: 5rem;
 
-        background-color: $yellow-dark;
+        //background-color: $yellow;
+        color: $yellow;
     }
 
-    &__card-content {
-    }
     &__card-header {
         font-size: 1.5rem;
         color: $white;
     }
+
     &__card-description {
+        margin-bottom: 1rem;
+
+        color: $grey;
     }
 }

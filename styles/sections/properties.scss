@@ -16,7 +16,7 @@
     }
 
     &__header {
-        color: $yellow-dark;
+        color: $yellow;
     }
     &__subheader {
         margin-bottom: 4rem;
@@ -45,25 +45,28 @@
     &__card {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
+        text-align: left;
 
-        border: 0.15rem solid $yellow-dark;
+        border: 1px solid $yellow;
         border-radius: 1rem;
-        padding: 1.5rem;
+        padding: 1rem;
 
-        background-color: $grey-semi-dark;
+        background: $bg-gradient;
     }
 
     &__card-image {
-        max-width: 50%;
+        border-radius: 0.5rem;
+
+        aspect-ratio: 16 / 9;
+
+        margin-bottom: 1rem;
     }
 
     &__card-header {
-        color: $yellow-dark;
+        color: $white;
     }
 
     &__card-quantity {
-        color: $white;
+        color: $grey;
     }
 }

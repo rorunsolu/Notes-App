@@ -8,6 +8,7 @@ import '/styles/components/button.scss';
 
 import '/styles/sections/properties.scss';
 import '/styles/sections/listings.scss';
+import '/styles/sections/value.scss';
 import '/styles/sections/agency.scss';
 import '/styles/sections/help.scss';
 import '/styles/sections/city.scss';
@@ -56,21 +57,3 @@ if (document.body.clientWidth < 1000) {
         navLink.addEventListener('click', closeNav);
     });
 }
-
-const accordionHeader = document.querySelectorAll(".accordion__header");
-
-accordionHeader.forEach(accordionHeader => {
-    accordionHeader.addEventListener("click", event => {
-        accordionHeader.classList.toggle("active");
-        const accordionBody = accordionHeader.nextElementSibling;
-
-        if (accordionHeader.classList.contains("active")) {
-            accordionBody.style.maxHeight = accordionBody.scrollHeight + "px";
-        }
-
-        else {
-            accordionBody.style.maxHeight = 0;
-        }
-
-    });
-});

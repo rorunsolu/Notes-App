@@ -8,14 +8,14 @@
     flex-direction: column;
     align-items: center;
 
-    border: 0.2rem solid $yellow-dark;
+    border: 0.2rem solid $yellow;
     border-radius: 1rem;
     margin-top: 5rem;
     margin-bottom: 5rem;
     padding: 2rem;
 
     &__header {
-        color: $yellow-dark;
+        color: $yellow;
     }
 
     &__description {

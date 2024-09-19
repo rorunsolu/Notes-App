@@ -6,7 +6,7 @@
 .agency {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5rem;
+    gap: 4rem;
 
     padding: 10rem 0;
 
@@ -21,37 +21,46 @@
     &__1st-wrapper {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
     }
 
     &__header {
         color: $white;
     }
 
+    &__subheader {
+        margin-bottom: 1rem;
+
+        line-height: 1.6;
+        font-size: 2rem;
+
+        color: $white;
+    }
+
     &__description {
-        color: hsl(0, 0%, 75%);
+        margin-bottom: 1rem;
+        color: $grey;
     }
 
     &__image {
-        border-radius: 1rem;
+        border-radius: 0.5rem;
 
-        aspect-ratio: 16 / 9;
+        height: 100%;
     }
 
     span {
-        color: $yellow-dark;
+        color: $yellow;
     }
 
     &__2nd-wrapper {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
     }
 
     &__header-icons {
         display: flex;
+        align-items: center;
 
-        position: relative;
+        padding: 0.55rem 0;
     }
 
     &__header-icon {
@@ -59,9 +68,7 @@
 
         width: 3rem;
 
-        margin-bottom: 1rem;
-
-        background-color: $yellow-dark;
+        background-color: $yellow;
 
         &:not(:first-child) {
             margin-left: -0.5rem;
@@ -74,15 +81,13 @@
         gap: 2rem;
     }
 
-    &__card-content {
-        display: flex;
-        flex-direction: column;
-
-        padding: 0 1rem;
+    &__card {
     }
 
     &__card-header {
-        color: $yellow-dark;
+        color: $yellow;
+
+        font-size: 1.5rem;
     }
 
     &__card-description {

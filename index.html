@@ -22,6 +22,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
 
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <title>Vite App</title>
   </head>
@@ -35,7 +37,7 @@
 
         <ul class="nav__list">
           <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-          <li class="nav__item"><a class="nav__link" href="#help">Services</a></li>
+          <li class="nav__item"><a class="nav__link" href="#listings">Property</a></li>
           <li class="nav__item"><a class="nav__link" href="#agents">Contact</a></li>
           <li class="nav__item"><a class="nav__link" href="#marketplace">About Us</a></li>
         </ul>
@@ -53,33 +55,37 @@
       </div>
     </nav>
 
-
     <header>
       <div class="container header">
 
-        <h1 class="header__header">Find The <span>Property</span> You’re Looking For</h1>
-        <img class="header__image" src="/images/skyscraper.jpg" alt="header">
+        <h1 class="header__header">Find The Property<br> That <span>You’re Looking</span> For </h1>
+
+        <h3 class="header__subheader">Browse through over 1,000 available properties for sale in your desired location,
+          and find the one that suits your needs.</h3>
 
         <div class="header__stat-wrapper">
-          <div class="header__stat">
-            <h2 class="header__stat-quantity">100+</h2>
-            <h3 class="header__stat-header">Properties</h3>
-          </div>
 
-          <div class="header__stat">
-            <h2 class="header__stat-quantity">12+</h2>
-            <h3 class="header__stat-header">Years of Experience</h3>
-          </div>
+          <article class="header__stat">
+            <p class="header__stat-number">1,000+</p>
+            <p class="header__stat-description">Properties For Sale</p>
+          </article>
 
-          <div class="header__stat">
-            <h2 class="header__stat-quantity">220+</h2>
-            <h3 class="header__stat-header">Customers</h3>
-          </div>
+          <article class="header__stat">
+            <p class="header__stat-number">500+</p>
+            <p class="header__stat-description">Listings Added Daily</p>
+          </article>
 
+          <article class="header__stat">
+            <p class="header__stat-number">100+</p>
+            <p class="header__stat-description">Professional Agents</p>
+          </article>
 
         </div>
 
+        <a class="button" href="#" target="_blank">View Properties</a>
+
       </div>
+
     </header>
 
     <main>
@@ -93,27 +99,48 @@
           <div class="properties__cards">
 
             <article class="properties__card">
-              <img class="properties__card-image" src="/images/house.png" alt="house">
-              <h4 class="properties__card-header">House</h4>
-              <p class="properties__card-quantity">12 Properties</p>
+              <img class="properties__card-image" src="/images/property-1.jpg" alt="image of a house with a pool">
+              <h4 class="properties__card-header">Luxury House</h4>
+              <p class="properties__card-quantity">We have over 12 of these properties located in multiple cities
+                available for
+                purchase or rent</p>
+              <div class="button-wrapper">
+                <a class="button" href="#">View Property</a>
+                <a class="button--secondary" href="#">Sales History</a>
+              </div>
             </article>
 
             <article class="properties__card">
-              <img class="properties__card-image" src="/images/villa.png" alt="house">
+              <img class="properties__card-image" src="/images/property-1.jpg" alt="image of a villa">
               <h4 class="properties__card-header">Villa</h4>
-              <p class="properties__card-quantity">23 Properties</p>
+              <p class="properties__card-quantity">We have 23 villas available across various prime locations, ready for
+                purchase or
+                rent.</p>
+              <div class="button-wrapper">
+                <a class="button" href="#">View Property</a>
+                <a class="button--secondary" href="#">Sales History</a>
+              </div>
             </article>
 
             <article class="properties__card">
-              <img class="properties__card-image" src="/images/town-house.png" alt="house">
+              <img class="properties__card-image" src="/images/property-1.jpg" alt="image of a town house">
               <h4 class="properties__card-header">Town House</h4>
-              <p class="properties__card-quantity">10 Properties</p>
+              <p class="properties__card-quantity">Explore 10 town houses located in the most desirable neighborhoods.
+              </p>
+              <div class="button-wrapper">
+                <a class="button" href="#">View Property</a>
+                <a class="button--secondary" href="#">Sales History</a>
+              </div>
             </article>
 
             <article class="properties__card">
-              <img class="properties__card-image" src="/images/office.png" alt="house">
+              <img class="properties__card-image" src="/images/property-1.jpg" alt="image of an office building">
               <h4 class="properties__card-header">Office</h4>
-              <p class="properties__card-quantity">60 Properties</p>
+              <p class="properties__card-quantity">60 office spaces available for immediate occupation or lease.</p>
+              <div class="button-wrapper">
+                <a class="button" href="#">View Property</a>
+                <a class="button--secondary" href="#">Sales History</a>
+              </div>
             </article>
 
           </div>
@@ -134,58 +161,46 @@
             <div class="listings__card-wrapper">
 
               <article class="listings__card">
-
-                <img class="listings__card-image" src="/images/luxury-house-1.jpg" alt="image of a Luxury House" loading="lazy">
-
-                <div class="listings__card-info">
-                  <h4 class="listings__card-header">Luxury House</h4>
-                  <h5 class="listings__card-address">123 Main St, Anytown, USA</h5>
-                  <p class="listings__card-price">$1,500,000</p>
+                <img class="listings__card-image" src="/images/luxury-house-1.jpg" alt="image of a Luxury House"
+                     loading="lazy">
+                <h4 class="listings__card-header">Luxury House</h4>
+                <p class="listings__card-address">123 Main St, Anytown, USA</p>
+                <p class="listings__card-description">This luxurious property features a stunning pool, modern interior,
+                  and is
+                  situated in one of the most desirable locations.</p>
+                <div class="button-wrapper">
                   <a class="button" href="#">Book a Viewing</a>
-
+                  <a class="button--secondary" href="#">Sales History</a>
                 </div>
-
               </article>
 
               <article class="listings__card">
-
-                <img class="listings__card-image" src="/images/luxury-house-2.jpg" alt="house" loading="lazy">
-
-                <div class="listings__card-info">
-                  <h4 class="listings__card-header">Luxury House</h4>
-                  <h5 class="listings__card-address">456 Elm Street, Chiraq, USA</h5>
-                  <p class="listings__card-price">$2,000,000</p>
+                <img class="listings__card-image" src="/images/luxury-house-3.jpg" alt="image of a Luxury House"
+                     loading="lazy">
+                <h4 class="listings__card-header">Luxury House</h4>
+                <p class="listings__card-address">789 Oak Street, Bonzakia, China</p>
+                <p class="listings__card-description">This property combines modern design with traditional charm,
+                  offering an
+                  unparalleled living experience in Bonzakia.</p>
+                <div class="button-wrapper">
                   <a class="button" href="#">Book a Viewing</a>
-
+                  <a class="button--secondary" href="#">Sales History</a>
                 </div>
-
               </article>
 
               <article class="listings__card">
-
-                <img class="listings__card-image" src="/images/luxury-house-3.jpg" alt="house" loading="lazy">
-
-                <div class="listings__card-info">
-                  <h4 class="listings__card-header">Luxury House</h4>
-                  <h5 class="listings__card-address">789 Oak Street, Bonzakia, China</h5>
-                  <p class="listings__card-price">$3,000,000</p>
+                <img class="listings__card-image" src="/images/luxury-house-2.jpg" alt="image of a Luxury House"
+                     loading="lazy">
+                <h4 class="listings__card-header">Luxury House</h4>
+                <p class="listings__card-address">456 Elm Street, Chiraq, USA</p>
+                <p class="listings__card-description">This elegant home offers breathtaking views, spacious rooms, and
+                  an ideal location for city living for families.</p>
+                <div class="button-wrapper">
                   <a class="button" href="#">Book a Viewing</a>
-
+                  <a class="button--secondary" href="#">Sales History</a>
                 </div>
-
               </article>
 
-            </div>
-
-            <div class="listings__callout">
-              <img class="listings__callout-image" src="/images/tall-building.jpg" alt="house" loading="lazy">
-              <h4 class="listings__callout-header">We've helped our clients purchase over <span>$340 million</span> of
-                real estate</h4>
-              <p class="listings__callout-description">Our team of experienced real estate agents will help you navigate
-                the process of buying or selling a home. We understand the importance of finding the right property for
-                you and your family, and we're committed to making the process as smooth and stress-free as possible.
-                <a href="#" target="_blank" >Read More</a>
-              </p>
             </div>
 
           </div>
@@ -193,11 +208,23 @@
         </div>
       </section>
 
+      <section id="value">
+        <div class="container value">
+          <h2 class="value__header">We've helped our clients purchase over <span>$340 million of real estate</span></h2>
+          <p class="value__description">Our team of experienced real estate agents will help you navigate the process of
+            buying or selling a home. We understand
+            the importance of finding the right property for you and your family, and we're committed to making the
+            process as
+            smooth and stress-free as possible.</p>
+          <a class="button" href="#">Learn More</a>
+        </div>
+      </section>
+
       <section id="agency">
         <div class="container agency">
 
           <div class="agency__1st-wrapper">
-            <h2 class="agency__header">Why Choose Our Agency</h2>
+            <h2 class="agency__header">Why <span>Choose Our </span>Agency</h2>
             <p class="agency__description">We are a team of experienced real estate agents who are passionate about
               helping
               our clients purchase, sell, and manage their real estate properties.</p>
@@ -214,41 +241,30 @@
                 <img class="agency__header-icon" src="/images/person-5.jpg" alt="agents" loading="lazy">
                 <img class="agency__header-icon" src="/images/person-6.jpg" alt="agents" loading="lazy">
               </div>
-              <h2 class="agency__header">45 Exclusive Real Estate <span>Agents</span></h2>
+              <h3 class="agency__subheader">45 <span>Exclusive Real Estate</span> Agents</h3>
             </div>
-
-
 
             <div class="agency__card-wrapper">
 
               <article class="agency__card">
-                <div class="agency__card-icon"></div>
-                <div class="agency__card-content">
-                  <h3 class="agency__card-header">Mortgage Services</h3>
-                  <p class="agency__card-description">We offer a range of mortgage services to help our clients find the
-                    right loan for their needs.</p>
-                </div>
+                <h4 class="agency__card-header">Mortgage Services</h4>
+                <p class="agency__card-description">We offer a range of mortgage services to help our clients find the
+                  right loan for their needs.</p>
               </article>
 
               <article class="agency__card">
-                <div class="agency__card-icon"></div>
-                <div class="agency__card-content">
-                  <h3 class="agency__card-header">Property Management</h3>
-                  <p class="agency__card-description">We take care of all your property management needs, from finding
-                    tenants to managing daily operations. Our goal is to maximize your returns while minimizing your
-                    stress.</p>
-                </div>
+                <h4 class="agency__card-header">Property Management</h4>
+                <p class="agency__card-description">We take care of all your property management needs, from finding
+                  tenants to managing daily operations. Our goal is to maximize your returns while minimizing your
+                  stress.</p>
               </article>
 
               <article class="agency__card">
-                <div class="agency__card-icon"></div>
-                <div class="agency__card-content">
-                  <h3 class="agency__card-header">Real Estate Consulting</h3>
-                  <p class="agency__card-description">Our team of real estate consultants specialize in helping clients
-                    achieve their real estate goals. We offer expert guidance and personalized solutions to help you
-                    find the perfect property or navigate the complex process of buying, selling, or managing a
-                    property.</p>
-                </div>
+                <h4 class="agency__card-header">Real Estate Consulting</h4>
+                <p class="agency__card-description">Our team of real estate consultants specialize in helping clients
+                  achieve their real estate goals. We offer expert guidance and personalized solutions to help you
+                  find the perfect property or navigate the complex process of buying, selling, or managing a
+                  property.</p>
               </article>
 
             </div>
@@ -258,44 +274,36 @@
         </div>
       </section>
 
-      <section id="help">
+      <section id="helpful">
         <div class="container help">
 
-          <div class="help__header-wrapper">
-            <h2 class="help__header"><span>See How</span> Our Realtors Can Help</h2>
-            <p class="help__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, placeat
-              temporibus. Cumque totam a adipisci ea reprehenderit fuga dolore molestias! </p>
-          </div>
+          <h2 class="help__header">See How<span> Our Realtors</span> Can Help</h2>
+          <p class="help__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, placeat
+            temporibus. Cumque totam a adipisci ea reprehenderit fuga dolore molestias! </p>
 
           <div class="help__card-wrapper">
 
             <article class="help__card">
-              <i class="ri-currency-line"></i>
-              <div class="help__card-content">
-                <h3 class="help__card-header">Rent Property</h3>
-                <p class="help__card-description">Discover the perfect place to call home with our comprehensive
-                  property rental services.</p>
-              </div>
+              <i class="fa-solid fa-handshake"></i>
+              <h3 class="help__card-header">Buy Property</h3>
+              <p class="help__card-description">We guide you through the home buying process, from finding the right
+                property to closing the deal.</p>
               <a class="button" href="#">Learn More</a>
             </article>
 
             <article class="help__card">
-              <i class="ri-currency-line"></i>
-              <div class="help__card-content">
-                <h3 class="help__card-header">Buy Property</h3>
-                <p class="help__card-description">We guide you through the home buying process, from finding the right
-                  property to closing the deal.</p>
-              </div>
+              <i class="fa-solid fa-landmark"></i>
+              <h3 class="help__card-header">Rent Property</h3>
+              <p class="help__card-description">Discover the perfect place to call home with our comprehensive
+                property rental services.</p>
               <a class="button" href="#">Learn More</a>
             </article>
 
             <article class="help__card">
-              <i class="ri-currency-line"></i>
-              <div class="help__card-content">
-                <h3 class="help__card-header">Sell Property</h3>
-                <p class="help__card-description">Maximize your returns with our expert property selling services,
-                  tailored to your needs.</p>
-              </div>
+              <i class="fa-solid fa-money-bill"></i>
+              <h3 class="help__card-header">Sell Property</h3>
+              <p class="help__card-description">Maximize your returns with our expert property selling services,
+                tailored to your needs.</p>
               <a class="button" href="#">Learn More</a>
             </article>
 
@@ -336,37 +344,37 @@
             <article class="agents__card">
               <img class="agents__card-image" src="/images/person-3.jpg" alt="agent" loading="lazy">
               <h3 class="agents__card-header">John Doe</h3>
-              <p class="agents__card-address">123 Main St, City</p>
+              <p class="agents__card-city">London</p>
 
-              <div class="agents__card-icon-wrapper">
-                <i class="ri-phone-fill"></i>
-                <i class="ri-phone-fill"></i>
-                <i class="ri-phone-fill"></i>
+              <div class="button-wrapper">
+                <a class="button" href="#" target="_blank">Contact</a>
+                <a class="button--secondary" href="#" target="_blank">View Profile</a>
               </div>
+
             </article>
 
             <article class="agents__card">
               <img class="agents__card-image" src="/images/person-5.jpg" alt="agent" loading="lazy">
               <h3 class="agents__card-header">Jane Smith</h3>
-              <p class="agents__card-address">456 Elm St, City</p>
+              <p class="agents__card-city">Dublin</p>
 
-              <div class="agents__card-icon-wrapper">
-                <i class="ri-phone-fill"></i>
-                <i class="ri-phone-fill"></i>
-                <i class="ri-phone-fill"></i>
+              <div class="button-wrapper">
+                <a class="button" href="#" target="_blank">Contact</a>
+                <a class="button--secondary" href="#" target="_blank">View Profile</a>
               </div>
+
             </article>
 
             <article class="agents__card">
               <img class="agents__card-image" src="/images/person-2.jpg" alt="agent" loading="lazy">
               <h3 class="agents__card-header">Bob Johnson</h3>
-              <p class="agents__card-address">789 Oak St, City</p>
+              <p class="agents__card-city">Paris</p>
 
-              <div class="agents__card-icon-wrapper">
-                <i class="ri-phone-fill"></i>
-                <i class="ri-phone-fill"></i>
-                <i class="ri-phone-fill"></i>
+              <div class="button-wrapper">
+                <a class="button" href="#" target="_blank">Contact</a>
+                <a class="button--secondary" href="#" target="_blank">View Profile</a>
               </div>
+
             </article>
 
           </div>

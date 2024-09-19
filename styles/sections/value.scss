@@ -1,0 +1,49 @@
+/* ------------ Imports ------------ */
+@import "styles/style.scss";
+
+/* ------------ Value ------------ */
+
+#value {
+    position: relative;
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        width: 100%;
+        height: 100%;
+
+        background-image: url("/images/value-bg.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        filter: brightness(0.2);
+    }
+}
+
+.value {
+    padding: 10rem 0;
+
+    @media (width <= 700px) {
+        padding: 5rem 0;
+    }
+
+    &__header {
+        color: $white;
+    }
+
+    &__description {
+        margin-bottom: 1rem;
+
+        color: $grey;
+    }
+
+    span {
+        color: $yellow;
+    }
+}

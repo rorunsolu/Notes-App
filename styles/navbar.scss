@@ -15,7 +15,7 @@ nav {
     height: 5rem;
     width: 100vw;
 
-    background-color: hsl(214, 13%, 11%);
+    background-color: $black;
 
     @media (width < 600px) {
         height: 3.5rem;
@@ -33,7 +33,7 @@ nav {
         font-size: 2.5rem;
         font-weight: 600;
 
-        color: $yellow-dark;
+        color: $yellow;
     }
 
     &__logo-img {
@@ -90,7 +90,7 @@ nav {
         }
 
         &:hover {
-            color: $yellow-dark;
+            color: $yellow;
         }
     }
 
@@ -115,7 +115,7 @@ nav {
 .nav__toggle-button {
     display: none;
 
-    color: $yellow-dark;
+    color: $yellow;
 
     @media (width < 1000px) {
         display: inline-block;
@@ -124,7 +124,7 @@ nav {
 
         font-size: 2rem;
 
-        color: $yellow-dark;
+        color: $yellow;
 
         cursor: pointer;
     }

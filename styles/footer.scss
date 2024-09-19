@@ -65,7 +65,7 @@
         color: hsl(0, 0%, 75%);
 
         &:hover {
-            color: $yellow-dark;
+            color: $yellow;
 
             cursor: pointer;
         }
@@ -79,7 +79,7 @@
 
     span {
         &:hover {
-            color: $yellow-dark;
+            color: $yellow;
 
             cursor: pointer;
         }

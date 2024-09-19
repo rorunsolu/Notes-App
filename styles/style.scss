@@ -2,12 +2,21 @@
 
 /* ------------ Variables ------------ */
 
-$grey: hsl(0, 0%, 55%);
-$grey-semi-dark: hsl(0, 0%, 19%);
-$dark-grey: hsl(0, 0%, 11%);
 $white: hsl(0, 0%, 100%);
-$black: #08100c; 
-$yellow-dark: hsl(39, 100%, 50%);
+$grey: hsl(0, 0%, 80%);
+$black: hsl(0, 0%, 0%);
+$yellow: hsl(39, 100%, 50%);
+
+$dark-grey: hsl(0, 0%, 11%);
+$grey-semi-dark: hsl(0, 0%, 19%);
+
+$color-white-hover: hsl(0, 0%, 84%);
+$color-yellow-hover: hsl(39, 96%, 41%);
+
+$bg-gradient: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
+    linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
+
+$transition: all 0.3s ease-in-out;
 
 /* ------------ Utilities ------------ */
 
@@ -19,7 +28,7 @@ $yellow-dark: hsl(39, 100%, 50%);
     width: 80%;
 
     margin: 0 auto;
-    max-width: 2000px;
+    max-width: 1600px;
 
     position: relative;
 
@@ -54,9 +63,6 @@ body {
     font-style: normal;
     line-height: 1.5;
 
-    color: hsl(0, 0%, 0%);
-    background-color: hsl(0, 0%, 100%);
-
     display: grid;
     grid-template-areas:
         "nav nav nav"
@@ -66,6 +72,8 @@ body {
     grid-template-rows: 5rem auto auto auto;
 
     min-height: 100vh;
+
+    background-color: $black;
 
     @media (width <= 600px) {
         grid-template-rows: 3.5rem auto auto auto;
@@ -79,7 +87,7 @@ nav {
 header {
     grid-area: header;
 
-    background-color: $black;
+    //background-color: $black;
 }
 
 footer {
@@ -95,44 +103,37 @@ main {
     grid-template-areas:
         "properties"
         "listings"
+        "value"
         "agency"
-        "help"
+        "helpful"
         "city"
         "agents"
         "marketplace"
         "newsletter";
-
-    grid-template-rows: auto;
 }
 
 #properties {
     grid-area: properties;
-
-    background-color: $dark-grey;
 }
 
 #listings {
     grid-area: listings;
+}
 
-    background-color: $black;
+#value {
+    grid-area: value;
 }
 
 #agency {
     grid-area: agency;
-
-    background-color: $dark-grey;
 }
 
-#help {
-    grid-area: help;
-
-    background-color: $black;
+#helpful {
+    grid-area: helpful;
 }
 
 #city {
     grid-area: city;
-
-    background-color: $black;
 }
 
 #agents {
@@ -170,7 +171,7 @@ h2 {
 }
 
 h3 {
-    font-weight: 800;
+    font-weight: 600;
     font-size: 1.75rem;
 
     @media (width <= 500px) {
@@ -179,7 +180,7 @@ h3 {
 }
 
 h4 {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.25rem;
 }
 
@@ -202,9 +203,9 @@ a {
 }
 
 img {
-    display: inline;
-    object-fit: cover;
-    object-position: center;
+    //display: inline;
+    //object-fit: cover;
+    //object-position: center;
 
     width: 100%;
 }
