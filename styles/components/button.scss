@@ -8,9 +8,9 @@
     display: flex;
     gap: 1rem;
 
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 
-    @media (width <= 275px) {
+    @media (width <= 400px) {
         flex-direction: column;
     }
 }
@@ -28,6 +28,8 @@
     font-weight: 500;
 
     &:hover {
+        outline: 0.1rem solid $black;
+
         background-color: $color-yellow-hover;
 
         transition: $transition;
@@ -35,7 +37,6 @@
 }
 
 .button--secondary {
-    outline: 2px solid $yellow;
     border-radius: 0.5rem;
     padding: 0.5rem 1.25rem;
 
@@ -45,6 +46,8 @@
     background-color: $white;
 
     &:hover {
+        outline: 0.1rem solid $yellow;
+
         background-color: $color-white-hover;
 
         transition: $transition;

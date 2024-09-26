@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
     <!-- Modern Normalize -->
     <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v2.0.0
         /modern-normalize.min.css" rel="stylesheet">
@@ -25,7 +29,7 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    <title>Vite App</title>
+    <title>Real Estate</title>
   </head>
 
   <body>
@@ -94,7 +98,7 @@
         <div class="container properties">
 
           <h2 class="properties__header">Take a Look at Our Properties</h2>
-          <h3 class="properties__subheader">Lorem ipsum dolor sit amet</h3>
+          <p class="properties__subheader">We have a wide range of properties available in many different locations.</p>
 
           <div class="properties__cards">
 
@@ -102,8 +106,7 @@
               <img class="properties__card-image" src="/images/property-1.jpg" alt="image of a house with a pool">
               <h4 class="properties__card-header">Luxury House</h4>
               <p class="properties__card-quantity">We have over 12 of these properties located in multiple cities
-                available for
-                purchase or rent</p>
+                available.</p>
               <div class="button-wrapper">
                 <a class="button" href="#">View Property</a>
                 <a class="button--secondary" href="#">Sales History</a>
@@ -113,9 +116,7 @@
             <article class="properties__card">
               <img class="properties__card-image" src="/images/property-1.jpg" alt="image of a villa">
               <h4 class="properties__card-header">Villa</h4>
-              <p class="properties__card-quantity">We have 23 villas available across various prime locations, ready for
-                purchase or
-                rent.</p>
+              <p class="properties__card-quantity">We have 23 villas available across various prime locations.</p>
               <div class="button-wrapper">
                 <a class="button" href="#">View Property</a>
                 <a class="button--secondary" href="#">Sales History</a>
@@ -156,52 +157,44 @@
             <a class="button" href="#">View All</a>
           </div>
 
-          <div class="listings__content">
+          <div class="listings__card-wrapper">
 
-            <div class="listings__card-wrapper">
+            <article class="listings__card">
+              <img class="listings__card-image" src="/images/luxury-house-1.jpg" alt="image of a Luxury House"
+                   loading="lazy">
+              <h4 class="listings__card-header">Luxury House</h4>
+              <p class="listings__card-address">123 Main St, Anytown, USA</p>
+              <p class="listings__card-description">This luxurious property features a stunning pool, modern interior...
+              </p>
+              <div class="button-wrapper">
+                <a class="button" href="#">Book a Viewing</a>
+                <a class="button--secondary" href="#">Sales History</a>
+              </div>
+            </article>
 
-              <article class="listings__card">
-                <img class="listings__card-image" src="/images/luxury-house-1.jpg" alt="image of a Luxury House"
-                     loading="lazy">
-                <h4 class="listings__card-header">Luxury House</h4>
-                <p class="listings__card-address">123 Main St, Anytown, USA</p>
-                <p class="listings__card-description">This luxurious property features a stunning pool, modern interior,
-                  and is
-                  situated in one of the most desirable locations.</p>
-                <div class="button-wrapper">
-                  <a class="button" href="#">Book a Viewing</a>
-                  <a class="button--secondary" href="#">Sales History</a>
-                </div>
-              </article>
+            <article class="listings__card">
+              <img class="listings__card-image" src="/images/luxury-house-3.jpg" alt="image of a Luxury House"
+                   loading="lazy">
+              <h4 class="listings__card-header">Luxury House</h4>
+              <p class="listings__card-address">789 Oak Street, Bonzakia, China</p>
+              <p class="listings__card-description">This property combines modern design with traditional charm...</p>
+              <div class="button-wrapper">
+                <a class="button" href="#">Book a Viewing</a>
+                <a class="button--secondary" href="#">Sales History</a>
+              </div>
+            </article>
 
-              <article class="listings__card">
-                <img class="listings__card-image" src="/images/luxury-house-3.jpg" alt="image of a Luxury House"
-                     loading="lazy">
-                <h4 class="listings__card-header">Luxury House</h4>
-                <p class="listings__card-address">789 Oak Street, Bonzakia, China</p>
-                <p class="listings__card-description">This property combines modern design with traditional charm,
-                  offering an
-                  unparalleled living experience in Bonzakia.</p>
-                <div class="button-wrapper">
-                  <a class="button" href="#">Book a Viewing</a>
-                  <a class="button--secondary" href="#">Sales History</a>
-                </div>
-              </article>
-
-              <article class="listings__card">
-                <img class="listings__card-image" src="/images/luxury-house-2.jpg" alt="image of a Luxury House"
-                     loading="lazy">
-                <h4 class="listings__card-header">Luxury House</h4>
-                <p class="listings__card-address">456 Elm Street, Chiraq, USA</p>
-                <p class="listings__card-description">This elegant home offers breathtaking views, spacious rooms, and
-                  an ideal location for city living for families.</p>
-                <div class="button-wrapper">
-                  <a class="button" href="#">Book a Viewing</a>
-                  <a class="button--secondary" href="#">Sales History</a>
-                </div>
-              </article>
-
-            </div>
+            <article class="listings__card">
+              <img class="listings__card-image" src="/images/luxury-house-2.jpg" alt="image of a Luxury House"
+                   loading="lazy">
+              <h4 class="listings__card-header">Luxury House</h4>
+              <p class="listings__card-address">456 Elm Street, Chiraq, USA</p>
+              <p class="listings__card-description">This elegant home offers breathtaking views, spacious rooms...</p>
+              <div class="button-wrapper">
+                <a class="button" href="#">Book a Viewing</a>
+                <a class="button--secondary" href="#">Sales History</a>
+              </div>
+            </article>
 
           </div>
 
