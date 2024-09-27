@@ -48,21 +48,22 @@
         font-weight: 500;
     }
 
-    img {
-        width: 17.5rem;
-
-        @media (width <= 600px) {
-            width: 12.5rem;
-        }
-    }
-
-    a {
+        a {
         color: hsl(0, 0%, 75%);
 
         &:hover {
             color: var(--color-yellow);
         }
     }
+
+    &__logo {
+        font-size: 2.5rem;
+        font-weight: 600;
+
+        color: var(--color-yellow);
+    }
+
+
 
     ul {
         display: flex;
