@@ -33,6 +33,9 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
+    <!-- Main Stylesheet -->
+    <script type="module" src="/main.js"></script>
+
     <title>Real Estate</title>
   </head>
 
@@ -118,7 +121,7 @@
             </article>
 
             <article class="properties__card">
-              <img class="properties__card-image" src="/images/property-1.jpg" alt="image of a villa">
+              <img class="properties__card-image" src="/images/house-3.jpg" alt="image of a villa">
               <h4 class="properties__card-header">Villa</h4>
               <p class="properties__card-quantity">We have 23 villas available across various prime locations.</p>
               <div class="button-wrapper">
@@ -128,7 +131,7 @@
             </article>
 
             <article class="properties__card">
-              <img class="properties__card-image" src="/images/property-1.jpg" alt="image of a town house">
+              <img class="properties__card-image" src="/images/house-2.jpg" alt="image of a town house">
               <h4 class="properties__card-header">Town House</h4>
               <p class="properties__card-quantity">Explore 10 town houses located in the most desirable neighborhoods.
               </p>
@@ -139,7 +142,7 @@
             </article>
 
             <article class="properties__card">
-              <img class="properties__card-image" src="/images/property-1.jpg" alt="image of an office building">
+              <img class="properties__card-image" src="/images/house-5.jpg" alt="image of an office building">
               <h4 class="properties__card-header">Office</h4>
               <p class="properties__card-quantity">60 office spaces available for immediate occupation or lease.</p>
               <div class="button-wrapper">
@@ -464,7 +467,51 @@
 
     </footer>
 
-    <script type="module" src="/main.js"></script>
+    <script>
+
+      window.addEventListener('scroll',
+        function () {
+          document.querySelector('nav').classList.toggle('window-scrolled', window.scrollY > 0);
+        });
+
+      const nav = document.querySelector('.nav__list');
+      const openNavButton = document.querySelector('#nav__toggle-open');
+      const closeNavButton = document.querySelector('#nav__toggle-close');
+
+      const openNav = function () {
+        if (nav.style.display === 'none') {
+          nav.style.display = 'flex';
+          openNavButton.style.display = 'none';
+          closeNavButton.style.display = 'inline-block';
+        }
+
+        else {
+          nav.style.display = 'none';
+          openNavButton.style.display = 'inline-block';
+          closeNavButton.style.display = 'none';
+        }
+      };
+
+      openNavButton.addEventListener('click', openNav);
+
+      const closeNav = function () {
+
+        nav.style.display = 'none';
+
+        openNavButton.style.display = 'inline-block';
+
+        closeNavButton.style.display = 'none';
+      };
+
+      closeNavButton.addEventListener('click', closeNav);
+
+      if (document.body.clientWidth < 1000) {
+        nav.querySelectorAll('li a').forEach(navLink => {
+          navLink.addEventListener('click', closeNav);
+        });
+      }
+
+    </script>
 
   </body>
 
