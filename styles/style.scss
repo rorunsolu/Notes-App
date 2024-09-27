@@ -1,30 +1,10 @@
-/* ------------ Imports ------------ */
-
-/* ------------ Variables ------------ */
-
-$white: hsl(0, 0%, 100%);
-$grey: hsl(0, 0%, 80%);
-$black: hsl(0, 0%, 0%);
-$yellow: hsl(39, 100%, 50%);
-
-$dark-grey: hsl(0, 0%, 11%);
-$grey-semi-dark: hsl(0, 0%, 19%);
-
-$color-white-hover: hsl(0, 0%, 84%);
-$color-yellow-hover: hsl(39, 96%, 41%);
-
-$bg-gradient: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
-    linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
-
-$transition: all 0.3s ease-in-out;
-
 :root {
     --color-white: hsl(0, 0%, 100%);
     --color-grey: hsl(0, 0%, 80%);
     --color-black: hsl(0, 0%, 0%);
     --color-yellow: hsl(39, 100%, 50%);
 
-    --dark-grey: hsl(0, 0%, 11%);
+    --color-dark-grey: hsl(0, 0%, 11%);
     --grey-semi-dark: hsl(0, 0%, 19%);
 
     --color-white-hover: hsl(0, 0%, 84%);
@@ -68,7 +48,7 @@ body {
 
     min-height: 100vh;
 
-    background-color: $black;
+    background-color: var(--color-black);
 
     @media (width <= 600px) {
         grid-template-rows: 3.5rem auto auto auto;
@@ -86,7 +66,7 @@ header {
 footer {
     grid-area: footer;
 
-    background-color: $dark-grey;
+    background-color: var(--color-dark-grey);
 }
 
 main {
