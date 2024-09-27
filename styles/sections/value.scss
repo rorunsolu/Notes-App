@@ -1,8 +1,3 @@
-/* ------------ Imports ------------ */
-@import "styles/style.scss";
-
-/* ------------ Value ------------ */
-
 #value {
     position: relative;
 
@@ -34,17 +29,17 @@
     }
 
     &__header {
-        color: $white;
+        color: var(--color-white);
     }
 
     &__description {
         margin-bottom: 1rem;
 
-        color: $grey;
+        color: var(--color-grey);
     }
 
     span {
-        color: $yellow;
+        color: var(--color-yellow);
     }
 
     .button {

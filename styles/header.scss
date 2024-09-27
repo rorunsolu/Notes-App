@@ -1,8 +1,3 @@
-/* ------------ Imports ------------ */
-@import "styles/style.scss";
-
-/* ------------ Header ------------ */
-
 header {
     position: relative;
 
@@ -42,15 +37,15 @@ header {
 
         text-align: center;
 
-        color: $white;
+        color: var(--color-white);
 
         span {
-            color: $yellow;
+            color: var(--color-yellow);
         }
     }
 
     &__subheader {
-        color: $white;
+        color: var(--color-white);
 
         font-weight: 500;
     }
@@ -60,20 +55,20 @@ header {
         align-items: center;
         gap: 2rem;
 
-                    @media (width <= 540px) {
-        flex-direction: column;
-    }
+        @media (width <= 540px) {
+            flex-direction: column;
+        }
     }
 
     &__stat-number {
         font-size: 2.25rem;
 
-        color: $yellow;
+        color: var(--color-yellow);
     }
 
     &__stat-description {
         font-size: 1.25rem;
 
-        color: $white;
+        color: var(--color-white);
     }
 }

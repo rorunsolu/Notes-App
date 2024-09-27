@@ -18,26 +18,23 @@ $bg-gradient: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
 
 $transition: all 0.3s ease-in-out;
 
-/* ------------ Utilities ------------ */
+:root {
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey: hsl(0, 0%, 80%);
+    --color-black: hsl(0, 0%, 0%);
+    --color-yellow: hsl(39, 100%, 50%);
 
-.container--nav {
-    width: 95%;
+    --dark-grey: hsl(0, 0%, 11%);
+    --grey-semi-dark: hsl(0, 0%, 19%);
+
+    --color-white-hover: hsl(0, 0%, 84%);
+    --color-yellow-hover: hsl(39, 96%, 41%);
+
+    --bg-gradient: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
+        linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
+
+    --transition: all 0.3s ease-in-out;
 }
-
-.container {
-    width: 80%;
-
-    margin: 0 auto;
-    max-width: 1600px;
-
-    position: relative;
-
-    @media (width <= 600px) {
-        width: 90%;
-    }
-}
-
-/* ------------ Reset ------------ */
 
 * {
     margin: 0;
@@ -48,8 +45,6 @@ $transition: all 0.3s ease-in-out;
     text-decoration: none;
     box-sizing: border-box;
 }
-
-/* ------------ Layout ------------ */
 
 html {
     scroll-behavior: smooth;
@@ -95,134 +90,17 @@ footer {
 }
 
 main {
-    display: grid;
     grid-area: main;
-
-    grid-template-areas:
-        "properties"
-        "listings"
-        "value"
-        "agency"
-        "helpful"
-        "city"
-        "agents"
-        "marketplace"
-        "newsletter";
 }
-
-#properties {
-    grid-area: properties;
-}
-
-#listings {
-    grid-area: listings;
-}
-
-#value {
-    grid-area: value;
-}
-
-#agency {
-    grid-area: agency;
-}
-
-#helpful {
-    grid-area: helpful;
-}
-
-#city {
-    grid-area: city;
-}
-
-#agents {
-    grid-area: agents;
-
-    background-color: $dark-grey;
-}
-
-#marketplace {
-    grid-area: marketplace;
-
-    background-color: $black;
-}
-
-#newsletter {
-    grid-area: newsletter;
-
-    background-color: $black;
-}
-
-/* ------------ Typography ------------ */
-
-h1 {
-    font-weight: 900;
-    font-size: 4.5rem;
-
-    @media (width <= 770px) {
-        font-size: 3.5rem;
-    }
-
-    @media (width <= 540px) {
-        font-size: 3rem;
-    }
-
-                @media (width <= 300px) {
-        font-size: 2.5rem;
-    }
-}
-
-h2 {
-    font-weight: 700;
-    font-size: 2.75rem;
-
-    @media (width <= 300px) {
-        font-size: 2.25rem;
-    }
-}
-
-h3 {
-    font-weight: 600;
-    font-size: 1.75rem;
-
-    @media (width <= 500px) {
-        font-size: 1.25rem;
-    }
-}
-
-h4 {
-    font-weight: 500;
-    font-size: 1.25rem;
-}
-
-p {
-    font-size: 1.125rem;
-
-    color: hsl(0, 0%, 100%);
-
-    transition: all 300ms ease;
-
-    @media (width <= 400px) {
-        //font-size: 0.9rem;
-    }
-}
-
-/* ------------ General ------------ */
 
 a {
     cursor: pointer;
 }
 
 img {
-    //display: inline;
-    //object-fit: cover;
-    //object-position: center;
+    display: inline;
+    object-fit: cover;
+    object-position: center;
 
     width: 100%;
-}
-
-/* ------------ Mobile Navbar ------------ */
-
-.window-scrolled {
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
-    box-sizing: content-box;
 }

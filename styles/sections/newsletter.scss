@@ -1,25 +1,20 @@
-/* ------------ Imports ------------ */
-@import "styles/style.scss";
-
-/* ------------ Newsletter ------------ */
-
 .newsletter {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    border: 0.2rem solid $yellow;
+    border: 0.2rem solid var(--color-yellow);
     border-radius: 1rem;
     margin-top: 5rem;
     margin-bottom: 5rem;
     padding: 2rem;
 
     &__header {
-        color: $yellow;
+        color: var(--color-yellow);
     }
 
     &__description {
-        color: hsl(0, 0%, 85%);
+        color: var(--color-grey);
 
         margin-bottom: 1rem;
     }
@@ -33,7 +28,7 @@
 
         max-width: 30rem;
 
-        background-color: $white;
-        color: $black;
+        background-color: var(--color-white);
+        color: var(--color-black);
     }
 }
