@@ -3,14 +3,9 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
 
-    padding: 10rem 0;
 
     @media (width < 1150px) {
         grid-template-columns: 1fr;
-    }
-
-    @media (width <= 700px) {
-        padding: 5rem 0;
     }
 
     &__1st-wrapper {
