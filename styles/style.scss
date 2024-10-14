@@ -107,3 +107,11 @@ img {
 p {
     color: var(--color-grey);
 }
+
+h2 {
+    color: var(--color-white);
+
+    span {
+        color: var(--color-yellow);
+    }
+}
