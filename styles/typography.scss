@@ -40,12 +40,4 @@ h4 {
 
 p {
     font-size: 1.125rem;
-
-    color: hsl(0, 0%, 100%);
-
-    transition: all 300ms ease;
-
-    @media (width <= 400px) {
-        //font-size: 0.9rem;
-    }
 }
