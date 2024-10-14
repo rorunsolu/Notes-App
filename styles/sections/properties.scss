@@ -4,12 +4,6 @@
     align-items: center;
     text-align: center;
 
-    padding: 10rem 0;
-
-    @media (width <= 700px) {
-        padding: 5rem 0;
-    }
-
     &__header {
         color: var(--color-yellow);
     }

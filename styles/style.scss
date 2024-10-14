@@ -27,6 +27,8 @@
     --color-white: #fff;
     --color-black: #000;
 
+    --bg-grey: #181819;
+
     --shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
 
     --font-weight-button: 500;
@@ -45,50 +47,45 @@
 }
 
 html {
-    scroll-behavior: smooth;
     font-size: 16px;
 }
 
 body {
     font-family: "Inter Tight", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
     font-style: normal;
+    font-weight: 400;
     line-height: 1.5;
 
-    display: grid;
-    grid-template-areas:
-        "nav nav nav"
-        "header header header"
-        "main main main"
-        "footer footer footer";
-    grid-template-rows: 5rem auto auto auto;
-
     min-height: 100vh;
-
-    background-color: var(--color-black);
-
-    @media (width <= 600px) {
-        grid-template-rows: 3.5rem auto auto auto;
-    }
-}
-
-nav {
-    grid-area: nav;
-}
-
-header {
-    grid-area: header;
-}
-
-footer {
-    grid-area: footer;
 
     background-color: var(--color-dark-grey);
 }
 
-main {
-    grid-area: main;
+nav {
+    height: 5rem;
+    width: 100vw;
+
+    @media (width < 600px) {
+        height: 3.5rem;
+    }
+}
+
+header {
+}
+
+footer {
+    background-color: var(--color-dark-grey);
+}
+
+section {
+    padding: 7.5rem 0;
+
+    overflow: hidden;
+
+    @media (width < 600px) {
+        padding: 5rem 0;
+    }
 }
 
 a {
