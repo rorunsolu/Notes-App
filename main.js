@@ -14,4 +14,3 @@ import '/styles/sections/help.scss';
 import '/styles/sections/city.scss';
 import '/styles/sections/agents.scss';
 import '/styles/sections/marketplace.scss';
-import '/styles/sections/newsletter.scss';

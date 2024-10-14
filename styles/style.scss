@@ -13,6 +13,8 @@
     --bg-gradient: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
         linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
 
+    --bg-gradient-card: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); 
+
     --transition: all 0.3s ease-in-out;
 }
 
@@ -49,6 +51,7 @@ body {
     min-height: 100vh;
 
     background-color: var(--color-black);
+    
 
     @media (width <= 600px) {
         grid-template-rows: 3.5rem auto auto auto;
