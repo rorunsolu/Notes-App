@@ -44,29 +44,6 @@
     font-weight: 500;
 
     &:hover {
-        outline: 1px solid var(--color-black);
-
         background-color: var(--color-yellow-hover);
-
-        transition: var(--transition);
-    }
-}
-
-.button--secondary {
-    border: 1.5px solid transparent;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1.25rem;
-
-    width: fit-content;
-
-    color: var(--color-black);
-    background-color: var(--color-white);
-
-    &:hover {
-        border: 1px solid var(--color-yellow);
-
-        background-color: var(--color-white-hover);
-
-        transition: var(--transition);
     }
 }

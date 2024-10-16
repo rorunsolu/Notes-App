@@ -1,11 +1,9 @@
 :root {
     --color-white: hsl(0, 0%, 100%);
     --color-grey: hsl(0, 0%, 80%);
+    --color-grey-dark: #555;
     --color-black: hsl(0, 0%, 0%);
     --color-yellow: hsl(39, 100%, 50%);
-
-    --color-dark-grey: hsl(0, 0%, 11%);
-    --grey-semi-dark: hsl(0, 0%, 19%);
 
     --color-white-hover: hsl(0, 0%, 84%);
     --color-yellow-hover: hsl(39, 96%, 41%);
@@ -14,6 +12,7 @@
     --gap-card-wrapper-medium: 3rem;
     --gap-card-wrapper-large: 4.5rem;
 
+    --border: 0.1rem solid hsl(0, 0%, 85%, 100%);
     --border-radius: 0.625rem;
 
     --padding: 1rem;
@@ -23,13 +22,10 @@
 
     --color-white: #fff;
     --color-black: #000;
-
-    --bg-grey: #181819;
     --bg-white: #ffff;
 
-    --shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
 
-    --font-weight-button: 500;
+    --shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
 
     --transition: 0.3s ease-in-out;
 }
@@ -57,7 +53,7 @@ body {
 
     min-height: 100vh;
 
-    //!background-color: var(--color-dark-grey);
+    color: var(--color-black);
     background-color: var(--color-white);
 }
 
@@ -71,10 +67,13 @@ nav {
 }
 
 header {
+    padding: 5rem 0;
+
+    overflow: hidden;
 }
 
 footer {
-    background-color: var(--color-dark-grey);
+    background-color: var(--color-black);
 }
 
 section {
@@ -89,7 +88,6 @@ section {
 
 article {
     border-radius: var(--border-radius);
-    padding: var(--padding);
 }
 
 a {
@@ -99,22 +97,30 @@ a {
 }
 
 img {
-    display: inline;
+    display: block;
     object-fit: cover;
     object-position: center;
 
     width: 100%;
+    height: auto;
 }
 
 p {
-    //color: var(--color-grey);
     color: var(--color-black);
 }
 
-h2 {
+h1 {
     color: var(--color-white);
+}
+
+h2 {
+    color: var(--color-black);
 
     span {
         color: var(--color-yellow);
     }
+}
+
+h4 {
+    color: var(--color-black);
 }

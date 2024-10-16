@@ -3,7 +3,6 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
 
-
     @media (width < 1150px) {
         grid-template-columns: 1fr;
     }
@@ -14,20 +13,17 @@
     }
 
     &__header {
-        color: var(--color-white);
+        text-align: start;
     }
 
     &__subheader {
         margin-bottom: 1rem;
 
-        line-height: 1.6;
         font-size: 2rem;
-
-        color: var(--color-white);
     }
 
     &__description {
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
     }
 
     &__image {
@@ -60,6 +56,12 @@
         &:not(:first-child) {
             margin-left: -0.5rem;
         }
+    }
+
+    &__card-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
 
     &__card-header {
