@@ -64,13 +64,10 @@
     font-weight: 600;
 
     color: var(--color-yellow);
+    color: var(--color-white);
 
     @media (width < 400px) {
         font-size: 1.5rem;
-    }
-
-    &:hover {
-        color: var(--color-orange);
     }
 
     img {

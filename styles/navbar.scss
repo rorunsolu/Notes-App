@@ -11,7 +11,7 @@ nav {
     height: 5rem;
     width: 100vw;
 
-    background-color: var(--color-black);
+    background-color: var(--color-yellow);
 
     @media (width < 600px) {
         height: 3.5rem;
@@ -25,121 +25,41 @@ nav {
 
     height: 100%;
 
-    &__logo {
-        font-size: 2.5rem;
-        font-weight: 600;
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
 
-        color: var(--color-yellow);
-    }
-
-    &__logo-img {
-        width: 12.5rem;
-        height: 4rem;
+        @media (width < 1000px) {
+            display: none;
+        }
     }
 
     &__list {
         display: flex;
         justify-content: space-between;
-
-        position: relative;
-
-        @media (width < 1000px) {
-            display: none;
-            flex-direction: column;
-            gap: 0;
-
-            position: absolute;
-            top: 100%;
-            right: 0;
-
-            background-color: var(--color-yellow);
-            box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.33);
-            border-radius: 0;
-        }
     }
 
     &__item {
         border-radius: 0.5rem;
         padding: 0.5rem 1rem;
-
-        @media (width < 1000px) {
-            border-radius: 0;
-            padding: 0;
-
-            height: 5rem;
-        }
-
-        &:hover {
-            background-color: var(--color-yellow);
-
-            transition: var(--transition);
-        }
     }
 
     &__link {
-        font-size: 1rem;
+        font-size: 1.125rem;
         font-weight: 500;
 
         color: var(--color-white);
 
-        @media (width < 1000px) {
-            display: flex;
-            align-items: center;
-
-            height: 100%;
-
-            padding: 1rem 5rem;
-
+        &:hover {
             color: var(--color-black);
-
-            &:hover {
-                background-color: var(--color-white);
-
-                transition: var(--transition);
-            }
         }
     }
 
-    &__buttons-wrapper {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+    .button {
+        padding: 0.75rem;
 
-        @media (width < 1000px) {
-            display: none;
-        }
-
-        a {
-            @media (width < 1000px) {
-                display: none;
-            }
-        }
-    }
-}
-
-.nav__toggle-button {
-    display: none;
-
-    color: var(--color-yellow);
-
-    @media (width < 1000px) {
-        display: inline-block;
-
-        background: transparent;
-
-        font-size: 2rem;
-
-        color: var(--color-yellow);
-    }
-}
-
-#nav__toggle-open {
-    cursor: pointer;
-}
-
-#nav__toggle-close {
-    @media (width < 1000px) {
-        display: none;
+        color: var(--color-white);
+        background-color: var(--color-black);
     }
 }
