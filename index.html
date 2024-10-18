@@ -536,41 +536,90 @@
           document.querySelector('nav').classList.toggle('window-scrolled', window.scrollY > 0);
         });
 
-      const nav = document.querySelector('.nav__list');
-      const openNavButton = document.querySelector('#nav__toggle-open');
-      const closeNavButton = document.querySelector('#nav__toggle-close');
+      let openMenuBarBtn = document.getElementById('js-open-menu-btn');
+      let closeMenuBarBtn = document.getElementById('js-close-menu-btn');
 
-      const openNav = function () {
-        if (nav.style.display === 'none') {
-          nav.style.display = 'flex';
-          openNavButton.style.display = 'none';
-          closeNavButton.style.display = 'inline-block';
-        }
+      openMenuBarBtn.addEventListener('click', openMenuBar);
 
-        else {
-          nav.style.display = 'none';
-          openNavButton.style.display = 'inline-block';
-          closeNavButton.style.display = 'none';
-        }
-      };
+      function openMenuBar() {
+        if (document.getElementById('js-menu')) return;
 
-      openNavButton.addEventListener('click', openNav);
+        let menuBar = document.createElement('div');
 
-      const closeNav = function () {
+        menuBar.className = 'menu';
+        menuBar.id = 'js-menu';
 
-        nav.style.display = 'none';
+        menuBar.innerHTML = `
+        
+          <div class="menu-top" id="js-menu-top">
 
-        openNavButton.style.display = 'inline-block';
+            <a class="logo" href="https://game-store-drab.vercel.app/">
+              <img src="/images/logo.png" alt="Game Store Logo">
+            </a>
 
-        closeNavButton.style.display = 'none';
-      };
+            <button class="close-menu-btn" id="js-close-menu-btn" aria-label="close menu" type="button">
+              <i class="ri-close-line"></i>
+            </button>
 
-      closeNavButton.addEventListener('click', closeNav);
+          </div>
 
-      if (document.body.clientWidth < 1000) {
-        nav.querySelectorAll('li a').forEach(navLink => {
-          navLink.addEventListener('click', closeNav);
+          <div class="menu-bottom" id="js-menu-bottom">
+            
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#featured">Games</a></li>
+              <li><a href="#updates">News</a></li>
+              <li><a href="#reason">About Us</a></li>
+            </ul>
+
+          </div>
+        `;
+
+        document.body.style.overflow = 'hidden';
+
+        document.body.appendChild(menuBar);
+
+        let closeMenuBarBtn = document.getElementById('js-close-menu-btn');
+
+        closeMenuBarBtn.addEventListener('click', closeMenuBar);
+
+        let links = menuBar.querySelectorAll('ul li a');
+        links.forEach(link => {
+          link.addEventListener('click', closeMenuBar);
         });
+
+        createOverlay();
+      }
+
+      function closeMenuBar() {
+        let menuBar = document.getElementById('js-menu');
+        let overlay = document.querySelector('.menu-overlay');
+
+        document.body.style.overflow = 'auto';
+
+        if (menuBar) {
+          menuBar.remove();
+        }
+
+        removeOverlay();
+      }
+
+      function createOverlay() {
+        let overlay = document.createElement('div');
+
+        overlay.className = 'menu-overlay';
+
+        overlay.addEventListener("click", closeMenuBar);
+
+        document.body.appendChild(overlay);
+      }
+
+      function removeOverlay() {
+        let overlay = document.querySelector('.menu-overlay');
+
+        if (overlay) {
+          overlay.remove();
+        }
       }
 
     </script>
