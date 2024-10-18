@@ -26,7 +26,7 @@
 
     --shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
 
-        --font-weight-button: 500;
+    --font-weight-button: 500;
 
     --transition: 0.3s ease-in-out;
 }
@@ -68,19 +68,19 @@ nav {
 }
 
 header {
-    padding: 5rem 0;
+    padding: 10rem 0;
 
-    overflow: hidden;
+        @media (width < 600px) {
+        padding: 5rem 0;
+    }
 }
 
 footer {
-            background-color: var(--color-yellow);
+    background-color: var(--color-yellow);
 }
 
 section {
     padding: 7.5rem 0;
-
-    overflow: hidden;
 
     @media (width < 600px) {
         padding: 5rem 0;
@@ -143,6 +143,8 @@ button {
 
     color: var(--color-white);
     background: transparent;
+
+    transition: var(--transition);
 
     i {
         border-radius: var(--border-radius);

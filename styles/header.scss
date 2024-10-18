@@ -27,36 +27,19 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 3rem;
-
-    padding: 10rem 0;
-
-    &__header {
-        grid-column-start: 1;
-        grid-column-end: 6;
-
-        text-align: center;
-
-        color: var(--color-white);
-
-        span {
-            font-family: "Pacifico", cursive;
-            font-weight: 400;
-
-            color: var(--color-yellow);
-        }
-    }
 
     &__subheader {
-        color: var(--color-white);
+        margin-bottom: 2rem;
 
-        font-weight: 500;
+        color: var(--color-white);
     }
 
     &__stat-wrapper {
         display: flex;
         align-items: center;
         gap: 2rem;
+
+        margin-bottom: 2rem;
 
         @media (width <= 540px) {
             flex-direction: column;

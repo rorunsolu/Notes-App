@@ -23,7 +23,7 @@
         margin-bottom: 1rem;
 
         font-size: 1.25rem;
-        font-weight: bold;
+        font-weight: 600;
         font-style: italic;
     }
 
@@ -46,11 +46,7 @@
     }
 
     &__author-name {
-        margin: 0;
-
-        font-size: 1.2rem;
-
-        color: #333;
+        font-size: 1.2rem; 
     }
 
     &__author-description {

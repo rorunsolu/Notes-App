@@ -4,6 +4,10 @@
     &__subheader {
         margin-bottom: 4rem;
     }
+
+    @media (width < 400px) {
+        text-align: left;
+    }
 }
 
 .gallery-grid {
@@ -15,6 +19,10 @@
     @media (width < 1600px) {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-template-rows: auto;
+    }
+
+    @media (width < 400px) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
     &__card {

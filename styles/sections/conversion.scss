@@ -22,7 +22,15 @@
 }
 
 .conversion {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+
+    @media (width < 400px) {
+        text-align: left;
+        align-items: start;
+    }
 
     &__header {
         color: var(--color-white);

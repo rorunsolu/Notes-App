@@ -26,6 +26,10 @@
     flex-direction: column;
     align-items: center;
 
+    @media (width < 400px) {
+        align-items: start;
+    }
+
     &__header {
         color: var(--color-white);
     }
@@ -36,5 +40,9 @@
         margin-bottom: 1rem;
 
         color: var(--color-grey);
+
+        @media (width < 400px) {
+            text-align: left;
+        }
     }
 }
