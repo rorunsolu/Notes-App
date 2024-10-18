@@ -66,7 +66,7 @@
     color: var(--color-yellow);
     color: var(--color-white);
 
-    @media (width < 400px) {
+    @media (width < 600px) {
         font-size: 1.5rem;
     }
 
@@ -77,8 +77,10 @@
 
         margin-left: -1.5rem;
 
-        @media (width < 400px) {
-            height: 2.5rem;
+        @media (width < 600px) {
+            height: 2.25rem;
+
+            margin-left: 0.05rem;
         }
     }
 }

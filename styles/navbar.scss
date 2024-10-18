@@ -61,5 +61,10 @@ nav {
 
         color: var(--color-white);
         background-color: var(--color-black);
+
+        &:hover {
+            background-color: var(--color-white);
+            color: var(--color-black);
+        }
     }
 }
