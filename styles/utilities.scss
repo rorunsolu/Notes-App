@@ -1,4 +1,4 @@
-.container--nav {
+.container-nav {
     width: 95%;
 }
 
@@ -32,18 +32,56 @@
 }
 
 .button {
-    border: 1.5px solid transparent;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+
+    border-radius: var(--border-radius);
+    padding: var(--padding-button);
 
     width: fit-content;
+
+    font-weight: var(--font-weight-button);
 
     color: var(--color-black);
     background-color: var(--color-yellow);
 
-    font-weight: 500;
-
     &:hover {
         background-color: var(--color-yellow-hover);
+    }
+
+    &:active {
+        border: 1.5px solid var(--color-white);
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2rem;
+    font-weight: 600;
+
+    color: var(--color-yellow);
+
+    @media (width < 400px) {
+        font-size: 1.5rem;
+    }
+
+    &:hover {
+        color: var(--color-orange);
+    }
+
+    img {
+        height: 3.5rem;
+
+        width: 100%;
+
+        margin-left: -1.5rem;
+
+        @media (width < 400px) {
+            height: 2.5rem;
+        }
     }
 }

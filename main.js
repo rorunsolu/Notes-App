@@ -5,6 +5,7 @@ import '/styles/typography.scss';
 import '/styles/navbar.scss';
 import '/styles/header.scss';
 import '/styles/footer.scss';
+import '/styles/menu.scss';
 
 import '/styles/sections/properties.scss';
 import '/styles/sections/value.scss';
