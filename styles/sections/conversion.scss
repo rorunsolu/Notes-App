@@ -27,7 +27,7 @@
     text-align: center;
     align-items: center;
 
-    @media (width < 400px) {
+    @media (width < 800px) {
         text-align: left;
         align-items: start;
     }
@@ -39,8 +39,10 @@
     &__subheader {
         margin-bottom: 2rem;
 
-        font-size: 1.2rem;
-
         color: var(--color-grey);
+
+        @media (width < 800px) {
+            text-align: left;
+        }
     }
 }

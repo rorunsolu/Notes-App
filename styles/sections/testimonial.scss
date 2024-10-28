@@ -5,8 +5,13 @@
 
     &__card-wrapper {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         gap: var(--gap-card-wrapper-medium);
+
+        @media (width < 350px) {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--gap-card-wrapper);
+        }
     }
 }
 
@@ -46,7 +51,7 @@
     }
 
     &__author-name {
-        font-size: 1.2rem; 
+        font-size: 1.2rem;
     }
 
     &__author-description {

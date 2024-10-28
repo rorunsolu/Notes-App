@@ -20,6 +20,10 @@
         margin-bottom: 1rem;
 
         font-size: 2rem;
+
+        @media (width < 800px) {
+            text-align: left;
+        }
     }
 
     &__description {
