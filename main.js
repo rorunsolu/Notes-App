@@ -8,7 +8,6 @@ import '/styles/footer.scss';
 import '/styles/menu.scss';
 
 import '/styles/sections/properties.scss';
-import '/styles/sections/value.scss';
 import '/styles/sections/agency.scss';
 import '/styles/sections/benefits.scss';
 import '/styles/sections/city.scss';
