@@ -1,22 +1,22 @@
 .properties {
-    
     &__subheader {
         text-align: center;
 
         margin-bottom: 4rem;
 
-                    @media (width < 400px) {
-        text-align: left;
-    }
+        @media (width < 400px) {
+            text-align: left;
+        }
     }
 
     &__cards {
+        display: -ms-grid;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+        //grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
         gap: var(--gap-card-wrapper);
 
         @media (width < 400px) {
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            //grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
         }
     }
 
@@ -28,9 +28,13 @@
 
         height: 25rem;
 
+        -webkit-box-shadow: var(--shadow);
+
         box-shadow: var(--shadow);
 
         &:hover .properties__image {
+            -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
             transform: scale(1.05);
         }
     }
@@ -47,10 +51,16 @@
 
         height: 100%;
 
+        -webkit-transition: var(--transition);
+
+        -o-transition: var(--transition);
+
         transition: var(--transition);
     }
 
     &__tags {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         gap: 1rem;
 
@@ -111,7 +121,11 @@
     }
 
     &__address {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
 
         margin-bottom: 0.7rem;
@@ -145,13 +159,21 @@
     }
 
     &__info {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         gap: 1.2rem;
     }
 
     &__info-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
 
         font-size: 0.8rem;

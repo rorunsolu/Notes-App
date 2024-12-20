@@ -10,14 +10,15 @@
     }
 
     &__card-wrapper {
+        display: -ms-grid;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+        //grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
         gap: var(--gap-card-wrapper);
 
         text-align: center;
 
         @media (width < 400px) {
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            //grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             text-align: left;
         }
     }

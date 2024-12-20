@@ -17,18 +17,29 @@
         background-position: center;
         background-repeat: no-repeat;
 
+        -webkit-filter: brightness(0.5);
+
         filter: brightness(0.5);
     }
 }
 
 .conversion {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
     @media (width < 800px) {
         text-align: left;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: start;
     }
 
