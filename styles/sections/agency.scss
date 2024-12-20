@@ -1,11 +1,11 @@
 .agency {
     display: -ms-grid;
     display: grid;
-    //grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
 
     @media (width < 1150px) {
-        //grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 
     &__1st-wrapper {
