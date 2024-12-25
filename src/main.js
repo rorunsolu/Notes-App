@@ -1,18 +1,18 @@
-import '/styles/style.scss';
+import '../src/styles/style.scss';
 
-import '/styles/utilities.scss';
-import '/styles/typography.scss';
-import '/styles/navbar.scss';
-import '/styles/header.scss';
-import '/styles/footer.scss';
-import '/styles/menu.scss';
+import '../src/styles/utilities.scss';
+import '../src/styles/typography.scss';
+import '../src/styles/navbar.scss';
+import '../src/styles/header.scss';
+import '../src/styles/footer.scss';
+import '../src/styles/menu.scss';
 
-import '/styles/sections/properties.scss';
-import '/styles/sections/agency.scss';
-import '/styles/sections/benefits.scss';
-import '/styles/sections/testimonial.scss';
-import '/styles/sections/conversion.scss';
-import '/styles/sections/gallery.scss';
+import '../src/styles/properties.scss';
+import '../src/styles/agency.scss';
+import '../src/styles/benefits.scss';
+import '../src/styles/testimonial.scss';
+import '../src/styles/conversion.scss';
+import '../src/styles/gallery.scss';
 
 let openMenuBarBtn = document.getElementById('js-open-menu-btn');
 
@@ -131,8 +131,7 @@ function rotateArrow() {
 
 function closeMenuBar() {
     let menuBar = document.getElementById('js-menu');
-    let overlay = document.querySelector('.menu__overlay');
-
+    
     document.body.style.overflow = 'auto';
 
     if (menuBar) {
