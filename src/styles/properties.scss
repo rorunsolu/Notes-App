@@ -1,12 +1,6 @@
 .properties {
     &__subheader {
-        text-align: center;
-
         margin-bottom: 4rem;
-
-        @media (width < 400px) {
-            text-align: left;
-        }
     }
 
     &__cards {
@@ -36,6 +30,10 @@
             -webkit-transform: scale(1.05);
             -ms-transform: scale(1.05);
             transform: scale(1.05);
+        }
+
+        @media (width < 500px) {
+            height: 20rem;
         }
     }
 
@@ -99,7 +97,7 @@
     &__details {
         border-radius: var(--border-radius);
         margin: 1rem;
-        padding: var(--padding);
+        padding: 0.75rem;
 
         position: absolute;
         bottom: 0;

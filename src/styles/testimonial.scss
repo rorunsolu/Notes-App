@@ -1,6 +1,14 @@
+#testimonial {
+    //background-color: var(--color-yellow);
+}
+
 .testimonial {
     &__header {
         margin-bottom: 4rem;
+
+        span {
+            //color: var(--color-white);
+        }
     }
 
     &__card-wrapper {
@@ -28,7 +36,6 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
 
-    border: var(--border);
     border-radius: var(--border-radius);
     padding: var(--padding);
 
@@ -36,39 +43,39 @@
         margin-bottom: 1rem;
 
         font-size: 1.25rem;
-        font-weight: 600;
+        font-weight: 500;
         font-style: italic;
     }
 
-    &__author {
+    &__image {
+        max-width: 200px;
+
+        margin-bottom: 1.5rem;
+    }
+
+    &__partner {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
 
-    &__author-image {
-        border-radius: 50%;
+        gap: 0.35rem;
 
-        width: 3rem;
-        height: 3rem;
+        &-name {
+            font-size: 1.2rem;
+        }
 
-        margin-right: 0.75rem;
-    }
+        &-description {
+            font-size: 0.875rem;
 
-    &__author-info {
-        text-align: left;
-    }
+            color: #777;
+        }
 
-    &__author-name {
-        font-size: 1.2rem;
-    }
-
-    &__author-description {
-        font-size: 0.875rem;
-
-        color: #777;
+        i {
+            color: var(--color-yellow);
+        }
     }
 }

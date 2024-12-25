@@ -17,12 +17,17 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> -->
 
     <script type="module" src="./src/main.js"></script>
 
@@ -46,7 +51,12 @@
 
           <li class="nav__item"><a class="nav__link" href="https://real-estate-website-pi-ten.vercel.app/">Home</a></li>
 
-          <li class="nav__item"><a class="nav__link" href="#pricing">Properties</a>
+          <li class="nav__item"><a class="nav__link" href="#pricing">Properties<svg xmlns="http://www.w3.org/2000/svg"
+                   fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                   stroke="currentColor"
+                   class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg></a>
 
             <ul class="nav__dropdown">
               <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="#properties">For Sale</a></li>
@@ -57,7 +67,12 @@
 
           </li>
 
-          <li class="nav__item"><a class="nav__link" href="#conversion">Contact Us</a>
+          <li class="nav__item"><a class="nav__link" href="#conversion">Contact<svg
+                   xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                   stroke="currentColor"
+                   class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg></a>
             <ul class="nav__dropdown">
               <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="#">Support</a></li>
               <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="#">Sales</a></li>
@@ -76,19 +91,14 @@
           </svg>
         </button>
 
-        <a class="button" href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-               fill="currentColor" class="size-6">
-            <path
-                  d="M4.913 2.658c2.075-.27 4.19-.408 6.337-.408 2.147 0 4.262.139 6.337.408 1.922.25 3.291 1.861 3.405 3.727a4.403 4.403 0 0 0-1.032-.211 50.89 50.89 0 0 0-8.42 0c-2.358.196-4.04 2.19-4.04 4.434v4.286a4.47 4.47 0 0 0 2.433 3.984L7.28 21.53A.75.75 0 0 1 6 21v-4.03a48.527 48.527 0 0 1-1.087-.128C2.905 16.58 1.5 14.833 1.5 12.862V6.638c0-1.97 1.405-3.718 3.413-3.979Z" />
-            <path
-                  d="M15.75 7.5c-1.376 0-2.739.057-4.086.169C10.124 7.797 9 9.103 9 10.609v4.285c0 1.507 1.128 2.814 2.67 2.94 1.243.102 2.5.157 3.768.165l2.782 2.781a.75.75 0 0 0 1.28-.53v-2.39l.33-.026c1.542-.125 2.67-1.433 2.67-2.94v-4.286c0-1.505-1.125-2.811-2.664-2.94A49.392 49.392 0 0 0 15.75 7.5Z" />
-          </svg>
+        <a class="button" href="#" target="_blank"><i class="ri-customer-service-2-line"></i>
           Get in Touch</a>
 
       </div>
     </nav>
 
     <header>
+
       <div class="container header">
 
         <h1 class="header__header">Find The Property<br> That <span>You’re Looking</span> For </h1>
@@ -115,12 +125,14 @@
 
         </div>
 
-        <a class="button" href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-               viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-               class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M7.5 3.75H6A2.25 2.25 0 0 0 3.75 6v1.5M16.5 3.75H18A2.25 2.25 0 0 1 20.25 6v1.5m0 9V18A2.25 2.25 0 0 1 18 20.25h-1.5m-9 0H6A2.25 2.25 0 0 1 3.75 18v-1.5M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+        <a class="button" href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+               fill="currentColor" class="size-6">
+            <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+            <path fill-rule="evenodd"
+                  d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z"
+                  clip-rule="evenodd" />
           </svg>
+
           View Properties</a>
 
       </div>
@@ -141,7 +153,8 @@
 
               <div class="properties__image-container">
 
-                <img class="properties__image" src="./src/assets/images/property-1.jpg" alt="Luxury Family Home" loading="lazy">
+                <img class="properties__image" src="./src/assets/images/property-1.jpg" alt="Luxury Family Home"
+                     loading="lazy">
 
                 <div class="properties__tags">
                   <span class="properties__tag properties__tag--sale">For Sale</span>
@@ -171,7 +184,8 @@
             <a class="properties__card">
 
               <div class="properties__image-container">
-                <img class="properties__image" src="./src/assets/images/house-5.jpg" alt="Modern Apartment" loading="lazy">
+                <img class="properties__image" src="./src/assets/images/house-5.jpg" alt="Modern Apartment"
+                     loading="lazy">
                 <div class="properties__tags">
                   <span class="properties__tag properties__tag--rent">For Rent</span>
                   <span class="properties__tag properties__tag--new">New</span>
@@ -224,7 +238,8 @@
             <a class="properties__card">
 
               <div class="properties__image-container">
-                <img class="properties__image" src="./src/assets/images/house-6.jpg" alt="Spacious Villa" loading="lazy">
+                <img class="properties__image" src="./src/assets/images/house-6.jpg" alt="Spacious Villa"
+                     loading="lazy">
                 <div class="properties__tags">
                   <span class="properties__tag properties__tag--sale">For Sale</span>
                   <span class="properties__tag properties__tag--featured">Featured</span>
@@ -256,51 +271,38 @@
       <section id="agency">
         <div class="container agency">
 
-          <div class="agency__1st-wrapper">
-            <h2 class="agency__header">Why <span>Choose Our</span> Agency</h2>
-            <p class="agency__description">We are a team of experienced real estate agents who are passionate about
-              helping
-              our clients purchase, sell, and manage their real estate properties.</p>
-            <img class="agency__image" src="./src/assets/images/building-2.jpg" alt="agency" loading="lazy">
+          <div class="agency__header-wrapper">
+            <h2 class="agency__subheader"><span>45 Exclusive</span> Real Estate Agents</h2>
+            <div class="agency__header-icons">
+              <img class="agency__header-icon" src="./src/assets/images/person-2.jpg" alt="agents" loading="lazy">
+              <img class="agency__header-icon" src="./src/assets/images/person-3.jpg" alt="agents" loading="lazy">
+              <img class="agency__header-icon" src="./src/assets/images/person-4.jpg" alt="agents" loading="lazy">
+              <img class="agency__header-icon" src="./src/assets/images/person-5.jpg" alt="agents" loading="lazy">
+              <img class="agency__header-icon" src="./src/assets/images/person-6.jpg" alt="agents" loading="lazy">
+            </div>
           </div>
 
-          <div class="agency__2nd-wrapper">
+          <div class="agency__card-wrapper">
 
-            <div class="agency__header-wrapper">
-              <div class="agency__header-icons">
-                <img class="agency__header-icon" src="./src/assets/images/person-2.jpg" alt="agents" loading="lazy">
-                <img class="agency__header-icon" src="./src/assets/images/person-3.jpg" alt="agents" loading="lazy">
-                <img class="agency__header-icon" src="./src/assets/images/person-4.jpg" alt="agents" loading="lazy">
-                <img class="agency__header-icon" src="./src/assets/images/person-5.jpg" alt="agents" loading="lazy">
-                <img class="agency__header-icon" src="./src/assets/images/person-6.jpg" alt="agents" loading="lazy">
-              </div>
-              <h3 class="agency__subheader">45 <span>Exclusive Real Estate</span> Agents</h3>
-            </div>
+            <article class="agency__card">
+              <h4 class="agency__card-header">Mortgage Services</h4>
+              <p class="agency__card-description">We offer a range of mortgage services to help our clients find the
+                right loan for their needs.</p>
+            </article>
 
-            <div class="agency__card-wrapper">
+            <article class="agency__card">
+              <h4 class="agency__card-header">Property Management</h4>
+              <p class="agency__card-description">We take care of all your property management needs, from finding
+                tenants to managing daily operations. Our goal is to maximize your returns while minimizing your
+                stress.</p>
+            </article>
 
-              <article class="agency__card">
-                <h4 class="agency__card-header">Mortgage Services</h4>
-                <p class="agency__card-description">We offer a range of mortgage services to help our clients find the
-                  right loan for their needs.</p>
-              </article>
-
-              <article class="agency__card">
-                <h4 class="agency__card-header">Property Management</h4>
-                <p class="agency__card-description">We take care of all your property management needs, from finding
-                  tenants to managing daily operations. Our goal is to maximize your returns while minimizing your
-                  stress.</p>
-              </article>
-
-              <article class="agency__card">
-                <h4 class="agency__card-header">Real Estate Consulting</h4>
-                <p class="agency__card-description">Our team of real estate consultants specialize in helping clients
-                  achieve their real estate goals. We offer expert guidance and personalized solutions to help you
-                  find the perfect property or navigate the complex process of buying, selling, or managing a
-                  property.</p>
-              </article>
-
-            </div>
+            <article class="agency__card">
+              <h4 class="agency__card-header">Real Estate Consulting</h4>
+              <p class="agency__card-description">Our team of real estate consultants specialize in helping clients
+                achieve their real estate goals. We offer expert guidance and personalized solutions to help you
+                find the perfect property.</p>
+            </article>
 
           </div>
 
@@ -319,24 +321,25 @@
           <div class="benefits__card-wrapper">
 
             <article class="benefits__card">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                   stroke="currentColor"
-                   class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                      d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path d="M4.5 3.75a3 3 0 0 0-3 3v.75h21v-.75a3 3 0 0 0-3-3h-15Z" />
+                <path fill-rule="evenodd"
+                      d="M22.5 9.75h-21v7.5a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3v-7.5Zm-18 3.75a.75.75 0 0 1 .75-.75h6a.75.75 0 0 1 0 1.5h-6a.75.75 0 0 1-.75-.75Zm.75 2.25a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z"
+                      clip-rule="evenodd" />
               </svg>
+
               <h3 class="benefits__card-header">Buy or Rent Property</h3>
               <p class="benefits__card-description">Find your dream home or the perfect rental, with expert support from
                 search to move-in</p>
             </article>
 
             <article class="benefits__card">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                   stroke="currentColor"
-                   class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                      d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                      d="M4.5 2.25a.75.75 0 0 0 0 1.5v16.5h-.75a.75.75 0 0 0 0 1.5h16.5a.75.75 0 0 0 0-1.5h-.75V3.75a.75.75 0 0 0 0-1.5h-15ZM9 6a.75.75 0 0 0 0 1.5h1.5a.75.75 0 0 0 0-1.5H9Zm-.75 3.75A.75.75 0 0 1 9 9h1.5a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75ZM9 12a.75.75 0 0 0 0 1.5h1.5a.75.75 0 0 0 0-1.5H9Zm3.75-5.25A.75.75 0 0 1 13.5 6H15a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75ZM13.5 9a.75.75 0 0 0 0 1.5H15A.75.75 0 0 0 15 9h-1.5Zm-.75 3.75a.75.75 0 0 1 .75-.75H15a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75ZM9 19.5v-2.25a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-.75.75h-4.5A.75.75 0 0 1 9 19.5Z"
+                      clip-rule="evenodd" />
               </svg>
+
               <h3 class="benefits__card-header">Wide Range of Properties</h3>
               <p class="benefits__card-description">Explore an extensive selection of properties tailored to your
                 lifestyle
@@ -344,12 +347,12 @@
             </article>
 
             <article class="benefits__card">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                   stroke="currentColor"
-                   class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                      d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                      d="M12.516 2.17a.75.75 0 0 0-1.032 0 11.209 11.209 0 0 1-7.877 3.08.75.75 0 0 0-.722.515A12.74 12.74 0 0 0 2.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 0 0 .374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 0 0-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08Zm3.094 8.016a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                      clip-rule="evenodd" />
               </svg>
+
               <h3 class="benefits__card-header">Trusted by Thousands</h3>
               <p class="benefits__card-description">Join thousands of satisfied clients who trust us for seamless
                 property
@@ -416,44 +419,63 @@
       <section id="testimonial">
         <div class="container testimonial">
 
-          <h2 class="testimonial__header">Words <span>From Our</span> Customers </h2>
+          <h2 class="testimonial__header">Words <span>From Our</span> Partners</h2>
 
           <div class="testimonial__card-wrapper">
 
             <article class="testimonial-card">
-              <p class="testimonial-card__quote">“The team was incredibly helpful and made the entire home-buying
-                process seamless
-                and stress-free.”</p>
-              <div class="testimonial-card__author">
-                <img src="./src/assets/images/person-2.jpg" alt="Author's picture" class="testimonial-card__author-image">
-                <div class="testimonial-card__author-info">
-                  <h3 class="testimonial-card__author-name">John Doe</h3>
-                  <p class="testimonial-card__author-description">First-time Homebuyer</p>
-                </div>
-              </div>
-            </article>
-
-            <article class="testimonial-card">
-              <p class="testimonial-card__quote">“I found my dream home within weeks, thanks to their knowledgeable and
+              <img src="./src/assets/images/microsoft-6.svg" class="testimonial-card__image">
+              <p class="testimonial-card__quote">“Our employees found their dream homes quickly, thanks to their
                 professional service.”</p>
-              <div class="testimonial-card__author">
-                <img src="./src/assets/images/person-4.jpg" alt="Author's picture" class="testimonial-card__author-image">
-                <div class="testimonial-card__author-info">
-                  <h3 class="testimonial-card__author-name">Sarah Johnson</h3>
-                  <p class="testimonial-card__author-description">Happy Homeowner</p>
+              <div class="testimonial-card__partner">
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="testimonial-card__partner-info">
+                  <h3 class="testimonial-card__partner-name">Microsoft</h3>
+                  <p class="testimonial-card__partner-description">Leading Technology Company</p>
                 </div>
               </div>
             </article>
 
             <article class="testimonial-card">
-              <p class="testimonial-card__quote">“From start to finish, the team was responsive, efficient, and always
-                willing to
-                go the extra mile.”</p>
-              <div class="testimonial-card__author">
-                <img src="./src/assets/images/person-6.jpg" alt="Author's picture" class="testimonial-card__author-image">
-                <div class="testimonial-card__author-info">
-                  <h3 class="testimonial-card__author-name">Michael Brown</h3>
-                  <p class="testimonial-card__author-description">Real Estate Investor</p>
+              <img src="./src/assets/images/youtube-6.svg" class="testimonial-card__image">
+              <p class="testimonial-card__quote">“Their video tours made it easy for our team to find the perfect homes
+                without hassle.”</p>
+              <div class="testimonial-card__partner">
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="testimonial-card__partner-info">
+                  <h3 class="testimonial-card__partner-name">YouTube</h3>
+                  <p class="testimonial-card__partner-description">Video Sharing Platform</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <img src="./src/assets/images/suzuki-12.svg" class="testimonial-card__image">
+              <p class="testimonial-card__quote">“Their reliable service helped our employees find the perfect homes
+                efficiently.”</p>
+              <div class="testimonial-card__partner">
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="testimonial-card__partner-info">
+                  <h3 class="testimonial-card__partner-name">Suzuki</h3>
+                  <p class="testimonial-card__partner-description">Automobile Manufacturer</p>
                 </div>
               </div>
             </article>
@@ -468,9 +490,7 @@
 
           <h2 class="conversion__header">We've helped our clients purchase over <span>$340 million of real estate</span>
           </h2>
-          <p class="conversion__subheader">Our team of experienced real estate agents will help you navigate the process
-            of
-            buying or selling a home. We understand
+          <p class="conversion__subheader">We understand
             the importance of finding the right property for you and your family, and we're committed to making the
             process as
             smooth and stress-free as possible.</p>

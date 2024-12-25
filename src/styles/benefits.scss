@@ -1,12 +1,6 @@
 .benefits {
     &__description {
-        text-align: center;
-
         margin-bottom: 4rem;
-
-        @media (width < 800px) {
-            text-align: left;
-        }
     }
 
     &__card-wrapper {
@@ -15,11 +9,8 @@
         grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
         gap: var(--gap-card-wrapper);
 
-        text-align: center;
-
         @media (width < 400px) {
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            text-align: left;
         }
     }
 
@@ -27,6 +18,8 @@
         width: 5rem;
         height: 5rem;
         stroke-width: 0.05rem;
+
+        color: var(--color-yellow);
     }
 
     &__card-header {

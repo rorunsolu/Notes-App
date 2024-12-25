@@ -41,22 +41,16 @@
     padding: var(--padding-button);
 
     width: -webkit-fit-content;
-
     width: -moz-fit-content;
-
     width: fit-content;
 
     font-weight: var(--font-weight-button);
 
-    color: var(--color-black);
+    color: var(--color-white);
     background-color: var(--color-yellow);
 
     &:hover {
         background-color: var(--color-yellow-hover);
-    }
-
-    &:active {
-        border: 1.5px solid var(--color-white);
     }
 }
 
@@ -76,5 +70,7 @@
     svg {
         height: 3rem;
         width: 3rem;
+
+        color: var(--color-white);
     }
 }

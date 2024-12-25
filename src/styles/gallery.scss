@@ -1,12 +1,6 @@
 .gallery-headers {
-    text-align: center;
-
     &__subheader {
         margin-bottom: 4rem;
-
-        @media (width < 800px) {
-            text-align: left;
-        }
     }
 }
 
